@@ -102,6 +102,11 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
         refreshOffers();
     }
 
+    @Inject(method = "restockAndUpdateDemandBonus", at = @At("HEAD"))
+    private void refreshOnRestockAndUpdateDemandBonus(CallbackInfo ci) {
+        refreshOffers();
+    }
+
     @Inject(method = "afterUsing", at = @At("HEAD"))
     private void updateAttributesAfterUse(TradeOffer offer, CallbackInfo ci) {
         if (offer instanceof ExtendedTradeOffer extOffer) {
