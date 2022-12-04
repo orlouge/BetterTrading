@@ -1,12 +1,11 @@
 plugins {
 	id "fabric-loom" version "0.11-SNAPSHOT"
-	id "com.modrinth.minotaur" version "2.+"
 }
 
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
-version = System.getenv("VERSION") ? System.getenv("VERSION") : "unversioned"
+version = project.mod_version
 
 repositories {
 	maven { url = "https://storage.googleapis.com/devan-maven/" }
@@ -35,7 +34,7 @@ loom {
 		}
 	}
 
-	accessWidenerPath = file("src/main/resources/sjvt.accesswidener")
+	accessWidenerPath = file("src/main/resources/bettertrading.accesswidener")
 }
 
 dependencies {
@@ -46,7 +45,6 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "net.devtech:arrp:${project.arrp_version}"
 
 	testmodImplementation sourceSets.main.output
 }
@@ -74,19 +72,5 @@ java {
 jar {
 	from("LICENSE") {
 		rename { "${it}_${project.archivesBaseName}"}
-	}
-}
-
-modrinth {
-	token = System.getenv("MODRINTH_TOKEN")
-	failSilently = true
-	projectId = project.project_id
-	versionNumber = version
-	versionName = System.getenv("VERSION_NAME") ? System.getenv("VERSION_NAME") : version
-	versionType = System.getenv("ALPHA") ? "alpha" : "release"
-	changelog = System.getenv("CAHNGELOG")
-	uploadFile = "./build/libs/SimpleJsonVillagerTrades-${version}.jar"
-	dependencies {
-		required.project "P7dR8mSH" // Mark Fabric API as a required dependency
 	}
 }

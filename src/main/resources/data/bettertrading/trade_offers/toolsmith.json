@@ -1,0 +1,273 @@
+{
+    "profession": "minecraft:toolsmith",
+    "replace": false,
+    "offers": {
+        "0_materials": {
+            "replace": false,
+            "min_trades": 1,
+            "max_trades": 4,
+            "trades": [
+                {
+                    "offer": {
+                        "item": "minecraft:coal",
+                        "price": 15,
+                        "max_uses": 16,
+                        "type": "minecraft:buy_for_one_emerald"
+                    },
+                    "level": "novice",
+                    "attributes": {
+                        "stone": -1.0,
+                        "hoe": -0.25,
+                        "axe": -0.25,
+                        "shovel": -0.25,
+                        "pickaxe": -0.25
+                    }
+                },
+                {
+                    "offer": {
+                        "item": "minecraft:iron_ingot",
+                        "price": 4,
+                        "experience": 10,
+                        "type": "minecraft:buy_for_one_emerald"
+                    },
+                    "level": "apprentice",
+                    "attributes": {
+                        "iron": 1.0,
+                        "hoe": -0.25,
+                        "axe": -0.25,
+                        "shovel": -0.25,
+                        "pickaxe": -0.25
+                    }
+                },
+                {
+                    "offer": {
+                        "item": "minecraft:flint",
+                        "price": 30,
+                        "experience": 20,
+                        "type": "minecraft:buy_for_one_emerald"
+                    },
+                    "level": "journeyman",
+                    "attributes": {
+                        "stone": 1.0,
+                        "hoe": -0.25,
+                        "axe": -0.25,
+                        "shovel": -0.25,
+                        "pickaxe": -0.25
+                    }
+                },
+                {
+                    "offer": {
+                        "item": "minecraft:diamond",
+                        "price": 1,
+                        "experience": 30,
+                        "type": "minecraft:buy_for_one_emerald"
+                    },
+                    "level": "expert",
+                    "attributes": {
+                        "stone": -0.25,
+                        "iron": -0.25,
+                        "diamond": 2.0,
+                        "hoe": -0.25,
+                        "axe": -0.25,
+                        "shovel": -0.25,
+                        "pickaxe": -0.25
+                    }
+                }
+            ]
+        },
+        "1_stone_tools": {
+            "replace": false,
+            "min_trades": 1,
+            "max_trades": 4,
+            "trades": [
+                {
+                    "offer": {
+                        "experience": 1,
+                        "item": "minecraft:stone_axe",
+                        "type": "minecraft:sell_item"
+                    },
+                    "level": "novice",
+                    "attributes": {
+                        "stone": 1.0,
+                        "axe": 1.0
+                    }
+                },
+                {
+                    "offer": {
+                        "experience": 1,
+                        "item": "minecraft:stone_shovel",
+                        "type": "minecraft:sell_item"
+                    },
+                    "level": "novice",
+                    "attributes": {
+                        "stone": 1.0,
+                        "shovel": 1.0
+                    }
+                },
+                {
+                    "offer": {
+                        "experience": 1,
+                        "item": "minecraft:stone_pickaxe",
+                        "type": "minecraft:sell_item"
+                    },
+                    "level": "novice",
+                    "attributes": {
+                        "stone": 1.0,
+                        "pickaxe": 1.0
+                    }
+                },
+                {
+                    "offer": {
+                        "experience": 1,
+                        "item": "minecraft:stone_hoe",
+                        "type": "minecraft:sell_item"
+                    },
+                    "level": "novice",
+                    "attributes": {
+                        "stone": 1.0,
+                        "hoe": 1.0
+                    }
+                }
+            ]
+        },
+        "2_various": {
+            "replace": false,
+            "min_trades": 1,
+            "max_trades": 1,
+            "trades": [
+                {
+                    "offer": {
+                        "experience": 5,
+                        "item": "minecraft:bell",
+                        "price": 36,
+                        "type": "minecraft:sell_item"
+                    },
+                    "level": "apprentice",
+                    "attributes": {
+                        "hoe": -0.1,
+                        "axe": -0.1,
+                        "shovel": -0.1,
+                        "pickaxe": -0.1
+                    }
+                }
+            ]
+        },
+        "3_iron_tools": {
+            "replace": false,
+            "min_trades": 0,
+            "max_trades": 4,
+            "trades": [
+                {
+                    "offer": {
+                        "max_uses": 3,
+                        "experience": 10,
+                        "price_multiplier": 0.2,
+                        "item": "minecraft:iron_axe",
+                        "type": "minecraft:sell_enchanted_tool"
+                    },
+                    "level": "journeyman",
+                    "attributes": {
+                        "iron": 1.0,
+                        "axe": 1.0
+                    }
+                },
+                {
+                    "offer": {
+                        "max_uses": 3,
+                        "experience": 10,
+                        "price_multiplier": 0.2,
+                        "item": "minecraft:iron_shovel",
+                        "base_price": 2,
+                        "type": "minecraft:sell_enchanted_tool"
+                    },
+                    "level": "journeyman",
+                    "attributes": {
+                        "iron": 1.0,
+                        "shovel": 1.0
+                    }
+                },
+                {
+                    "offer": {
+                        "max_uses": 3,
+                        "experience": 10,
+                        "price_multiplier": 0.2,
+                        "item": "minecraft:iron_pickaxe",
+                        "base_price": 3,
+                        "type": "minecraft:sell_enchanted_tool"
+                    },
+                    "level": "journeyman",
+                    "attributes": {
+                        "iron": 1.0,
+                        "pickaxe": 1.0
+                    }
+                }
+            ]
+        },
+        "4_diamond_tools": {
+            "replace": false,
+            "min_trades": 1,
+            "max_trades": 4,
+            "trades": [
+                {
+                    "offer": {
+                        "max_uses": 3,
+                        "experience": 10,
+                        "item": "minecraft:diamond_hoe",
+                        "price": 4,
+                        "type": "minecraft:sell_item"
+                    },
+                    "level": "journeyman",
+                    "attributes": {
+                        "diamond": 1.0,
+                        "hoe": 1.0
+                    }
+                },
+                {
+                    "offer": {
+                        "max_uses": 3,
+                        "experience": 15,
+                        "price_multiplier": 0.2,
+                        "item": "minecraft:diamond_axe",
+                        "base_price": 12,
+                        "type": "minecraft:sell_enchanted_tool"
+                    },
+                    "level": "expert",
+                    "attributes": {
+                        "diamond": 1.0,
+                        "axe": 1.0
+                    }
+                },
+                {
+                    "offer": {
+                        "max_uses": 3,
+                        "experience": 15,
+                        "price_multiplier": 0.2,
+                        "item": "minecraft:diamond_shovel",
+                        "base_price": 5,
+                        "type": "minecraft:sell_enchanted_tool"
+                    },
+                    "level": "expert",
+                    "attributes": {
+                        "diamond": 1.0,
+                        "shovel": 1.0
+                    }
+                },
+                {
+                    "offer": {
+                        "max_uses": 3,
+                        "experience": 30,
+                        "price_multiplier": 0.2,
+                        "item": "minecraft:diamond_pickaxe",
+                        "base_price": 13,
+                        "type": "minecraft:sell_enchanted_tool"
+                    },
+                    "level": "master",
+                    "attributes": {
+                        "diamond": 1.0,
+                        "pickaxe": 1.0
+                    }
+                }
+            ]
+        }
+    }
+}

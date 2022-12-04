@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.github.orlouge.bettertrading.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "TradeOffersAccessor",
+    "TradeOffersAccessor$BuyForOneEmeraldFactoryAccessor",
+    "TradeOffersAccessor$EnchantBookFactoryAccessor",
+    "TradeOffersAccessor$ProcessItemFactoryAccessor",
+    "TradeOffersAccessor$SellDyedArmorFactoryAccessor",
+    "TradeOffersAccessor$SellEnchantedToolFactoryAccessor",
+    "TradeOffersAccessor$SellItemFactoryAccessor",
+    "TradeOffersAccessor$SellMapFactoryAccessor",
+    "TradeOffersAccessor$SellPotionHoldingItemFactoryAccessor",
+    "TradeOffersAccessor$SellSuspiciousStewFactoryAccessor",
+    "TradeOffersAccessor$TypeAwareBuyForOneEmeraldFactoryAccessor",
+    "TradeOffersFactoryMixin",
+    "VillagerEntityMixin",
+    "ZombieVillagerEntityMixin",
+    "ZombieEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

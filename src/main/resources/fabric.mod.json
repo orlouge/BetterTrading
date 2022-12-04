@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "sjvt",
+  "id": "bettertrading",
   "version": "${version}",
 
-  "name": "SimpleJsonVillagerTrades",
-  "description": "As simple as it sounds, a small jij-able library to modify/add/remove Villager trades via datapacks.",
+  "name": "Better Trading",
+  "description": "Villager trading mechanics overhaul",
   "authors": [
+    "orlouge",
     "aws404"
   ],
   "contact": {
-    "sources": "https://github.com/aws404/SimpleJsonVillagerTrades",
-    "issues": "https://github.com/aws404/SimpleJsonVillagerTrades/issues"
+    "sources": "https://github.com/orlouge/better-trading",
+    "issues": "https://github.com/orlouge/better-trading/issues"
   },
 
   "license": "CC0-1.0",
@@ -18,12 +19,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.aws404.sjvt.SimpleJsonVillagerTradesMod"
+      "com.github.orlouge.bettertrading.BetterTradingMod"
     ]
   },
-  "accessWidener": "sjvt.accesswidener",
+  "accessWidener": "bettertrading.accesswidener",
   "mixins": [
-    "sjvt.mixins.json"
+    "bettertrading.mixins.json"
   ],
 
   "depends": {
