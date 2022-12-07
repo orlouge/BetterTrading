@@ -18,7 +18,7 @@ import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.profiler.Profiler;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerProfession;
 
@@ -94,7 +94,7 @@ public class TradeOfferManager extends JsonDataLoader implements IdentifiableRes
     }
 
     public Optional<Collection<TradeGroup>> getVillagerOffers(VillagerProfession profession) {
-        return Optional.ofNullable(tradeGroups.get(Registry.VILLAGER_PROFESSION.getId(profession))).map(Map::values).or(() -> generateTradeGroups(profession));
+        return Optional.ofNullable(tradeGroups.get(Registries.VILLAGER_PROFESSION.getId(profession))).map(Map::values).or(() -> generateTradeGroups(profession));
     }
 
     private Optional<Collection<TradeGroup>> generateTradeGroups(VillagerProfession profession) {

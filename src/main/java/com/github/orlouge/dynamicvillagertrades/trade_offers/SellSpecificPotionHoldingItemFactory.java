@@ -12,7 +12,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionUtil;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 import net.minecraft.village.TradeOffer;
 
 import java.util.Optional;
@@ -29,9 +29,9 @@ public class SellSpecificPotionHoldingItemFactory implements SerializableTradeOf
     private final Identifier potion;
 
     public static final Codec<SellSpecificPotionHoldingItemFactory> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Registry.ITEM.getCodec().optionalFieldOf("arrow", Items.ARROW).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSecondBuy()),
+            Registries.ITEM.getCodec().optionalFieldOf("arrow", Items.ARROW).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSecondBuy()),
             Codec.INT.optionalFieldOf("second_count", 1).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSecondCount()),
-            Registry.ITEM.getCodec().optionalFieldOf("tipped_arrow", Items.TIPPED_ARROW).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSell().getItem()),
+            Registries.ITEM.getCodec().optionalFieldOf("tipped_arrow", Items.TIPPED_ARROW).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSell().getItem()),
             Codec.INT.fieldOf("price").forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getPrice()),
             Codec.INT.optionalFieldOf("sell_count", 1).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSellCount()),
             Codec.INT.optionalFieldOf("max_uses", 12).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getMaxUses()),
@@ -57,7 +57,7 @@ public class SellSpecificPotionHoldingItemFactory implements SerializableTradeOf
 
     @Override
     public TradeOffer create(Entity entity, Random random) {
-        Optional<Potion> optPotion = Registry.POTION.getOrEmpty(this.potion);
+        Optional<Potion> optPotion = Registries.POTION.getOrEmpty(this.potion);
         if (optPotion.isEmpty()) {
             throw new IllegalStateException("Potion " + this.potion + " does not exist.");
         }

@@ -11,7 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 import net.minecraft.village.TradeOffer;
 import org.jetbrains.annotations.Nullable;
 
@@ -40,7 +40,7 @@ public class EnchantSpecificBookFactory implements SerializableTradeOfferFactory
     @Nullable
     @Override
     public TradeOffer create(Entity entity, Random random) {
-        Enchantment enchantment = Registry.ENCHANTMENT.get(this.type);
+        Enchantment enchantment = Registries.ENCHANTMENT.get(this.type);
         if (enchantment == null) {
             throw new IllegalStateException("Enchantment " + this.type + " does not exist.");
         }

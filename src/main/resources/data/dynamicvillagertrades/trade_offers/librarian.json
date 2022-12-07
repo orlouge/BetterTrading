@@ -6,7 +6,7 @@
           "replace": false,
           "min_trades": 0,
           "max_trades": 1,
-          "randomness": 0.15,
+          "randomness": 0.1,
           "affinity": {
               "enchanter": 1
           },
@@ -1784,7 +1784,7 @@
           "replace": false,
           "min_trades": 0,
           "max_trades": 1,
-          "randomness": 0.15,
+          "randomness": 0.1,
           "affinity": {
               "enchanter": 1
           },
@@ -3562,7 +3562,7 @@
           "replace": false,
           "min_trades": 0,
           "max_trades": 1,
-          "randomness": 0.15,
+          "randomness": 0.1,
           "affinity": {
               "enchanter": 1
           },
@@ -5340,7 +5340,7 @@
           "replace": false,
           "min_trades": 0,
           "max_trades": 1,
-          "randomness": 0.15,
+          "randomness": 0.1,
           "affinity": {
               "enchanter": 1
           },

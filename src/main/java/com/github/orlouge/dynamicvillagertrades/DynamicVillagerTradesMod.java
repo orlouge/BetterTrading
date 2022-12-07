@@ -11,7 +11,7 @@ import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registry;
 
 public class DynamicVillagerTradesMod implements ModInitializer {
 	public static final String MOD_ID = "bettertrading";
