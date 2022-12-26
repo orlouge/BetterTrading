@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "bettertrading",
+  "id": "dynamicvillagertrades",
   "version": "${version}",
 
-  "name": "Better Trading",
+  "name": "Dynamic Villager Trades",
   "description": "Villager trading mechanics overhaul",
   "authors": [
     "orlouge",
@@ -19,12 +19,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.orlouge.bettertrading.BetterTradingMod"
+      "com.github.orlouge.dynamicvillagertrades.DynamicVillagerTradesMod"
     ]
   },
-  "accessWidener": "bettertrading.accesswidener",
+  "accessWidener": "dynamicvillagertrades.accesswidener",
   "mixins": [
-    "bettertrading.mixins.json"
+    "dynamicvillagertrades.mixins.json"
   ],
 
   "depends": {
@@ -32,8 +32,5 @@
     "fabric": "*",
     "minecraft": "1.19.x",
     "java": ">=17"
-  },
-  "recommends": {
-    "advanced_runtime_resource_pack": ">=0.5.0"
   }
 }

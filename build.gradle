@@ -34,7 +34,7 @@ loom {
 		}
 	}
 
-	accessWidenerPath = file("src/main/resources/bettertrading.accesswidener")
+	accessWidenerPath = file("src/main/resources/dynamicvillagertrades.accesswidener")
 }
 
 dependencies {
