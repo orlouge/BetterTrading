@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "package": "io.github.orlouge.dynamicvillagertrades.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "TradeOffersAccessor",
+    "TradeOffersAccessor$BuyForOneEmeraldFactoryAccessor",
+    "TradeOffersAccessor$EnchantBookFactoryAccessor",
+    "TradeOffersAccessor$ProcessItemFactoryAccessor",
+    "TradeOffersAccessor$SellDyedArmorFactoryAccessor",
+    "TradeOffersAccessor$SellEnchantedToolFactoryAccessor",
+    "TradeOffersAccessor$SellItemFactoryAccessor",
+    "TradeOffersAccessor$SellMapFactoryAccessor",
+    "TradeOffersAccessor$SellPotionHoldingItemFactoryAccessor",
+    "TradeOffersAccessor$SellSuspiciousStewFactoryAccessor",
+    "TradeOffersAccessor$TypeAwareBuyForOneEmeraldFactoryAccessor",
+    "TradeOffersFactoryMixin",
+    "VillagerEntityMixin",
+    "ZombieVillagerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
