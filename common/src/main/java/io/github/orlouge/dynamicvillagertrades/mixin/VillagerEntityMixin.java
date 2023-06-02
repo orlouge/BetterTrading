@@ -137,7 +137,7 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
     }
 
     private boolean refreshOffers() {
-        Optional<Collection<TradeGroup>> optoffers = DynamicVillagerTradesMod.TRADE_OFFER_MANAGER.getVillagerOffers(this.getVillagerData().getProfession());
+        Optional<Collection<TradeGroup>> optoffers = DynamicVillagerTradesMod.TRADE_OFFER_MANAGER.getVillagerOffers(this.getVillagerData().getProfession()).map(Map::values);
         optoffers.ifPresent(offerGroups -> {
             TradeOfferList offerList = this.getOffers();
             offerList.clear();

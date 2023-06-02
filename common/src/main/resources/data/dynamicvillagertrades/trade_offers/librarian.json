@@ -23,9 +23,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -40,9 +40,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -57,9 +57,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -74,9 +74,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -91,9 +91,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -108,9 +108,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -125,9 +125,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -142,9 +142,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -159,9 +159,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -176,9 +176,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -193,9 +193,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -210,9 +210,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -227,9 +227,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -244,9 +244,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -261,9 +261,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -278,9 +278,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -295,9 +295,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -312,9 +312,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -329,9 +329,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -346,9 +346,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -363,9 +363,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -380,9 +380,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -397,9 +397,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -414,9 +414,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "fast": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "fast": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -431,9 +431,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -448,9 +448,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -465,9 +465,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -482,9 +482,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -499,9 +499,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -516,9 +516,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -533,9 +533,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "treasure": 0.3333333333333333,
-                        "fire": -0.3333333333333333,
-                        "swimming": -0.3333333333333333
+                        "treasure": 0.333,
+                        "fire": -0.333,
+                        "swimming": -0.333
                     }
                 },
                 {
@@ -550,9 +550,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "treasure": 0.3333333333333333,
-                        "fire": -0.3333333333333333,
-                        "swimming": -0.3333333333333333
+                        "treasure": 0.333,
+                        "fire": -0.333,
+                        "swimming": -0.333
                     }
                 },
                 {
@@ -583,9 +583,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -600,9 +600,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -617,9 +617,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -634,9 +634,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -651,9 +651,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -668,9 +668,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -685,9 +685,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -702,9 +702,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -719,9 +719,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -736,9 +736,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -753,9 +753,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -770,9 +770,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -787,9 +787,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -804,9 +804,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -821,9 +821,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -838,9 +838,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "light": 0.333
                     }
                 },
                 {
@@ -855,9 +855,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "light": 0.333
                     }
                 },
                 {
@@ -872,9 +872,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "fire": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "fire": 0.333
                     }
                 },
                 {
@@ -889,9 +889,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "fire": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "fire": 0.333
                     }
                 },
                 {
@@ -906,9 +906,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -923,9 +923,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -940,9 +940,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -957,9 +957,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -974,9 +974,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -991,9 +991,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -1143,9 +1143,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -1160,9 +1160,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -1177,9 +1177,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -1194,9 +1194,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -1211,9 +1211,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -1228,9 +1228,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "bow": 1,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "survival": 0.333,
+                        "light": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -1245,9 +1245,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "bow": 1,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "survival": 0.333,
+                        "light": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -1801,9 +1801,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -1818,9 +1818,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -1835,9 +1835,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -1852,9 +1852,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -1869,9 +1869,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -1886,9 +1886,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -1903,9 +1903,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -1920,9 +1920,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -1937,9 +1937,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -1954,9 +1954,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -1971,9 +1971,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -1988,9 +1988,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -2005,9 +2005,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -2022,9 +2022,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -2039,9 +2039,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -2056,9 +2056,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -2073,9 +2073,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -2090,9 +2090,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -2107,9 +2107,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -2124,9 +2124,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -2141,9 +2141,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -2158,9 +2158,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -2175,9 +2175,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -2192,9 +2192,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "fast": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "fast": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -2209,9 +2209,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -2226,9 +2226,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -2243,9 +2243,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -2260,9 +2260,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -2277,9 +2277,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -2294,9 +2294,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -2311,9 +2311,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "treasure": 0.3333333333333333,
-                        "fire": -0.3333333333333333,
-                        "swimming": -0.3333333333333333
+                        "treasure": 0.333,
+                        "fire": -0.333,
+                        "swimming": -0.333
                     }
                 },
                 {
@@ -2328,9 +2328,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "treasure": 0.3333333333333333,
-                        "fire": -0.3333333333333333,
-                        "swimming": -0.3333333333333333
+                        "treasure": 0.333,
+                        "fire": -0.333,
+                        "swimming": -0.333
                     }
                 },
                 {
@@ -2361,9 +2361,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -2378,9 +2378,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -2395,9 +2395,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -2412,9 +2412,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -2429,9 +2429,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -2446,9 +2446,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -2463,9 +2463,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -2480,9 +2480,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -2497,9 +2497,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -2514,9 +2514,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -2531,9 +2531,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -2548,9 +2548,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -2565,9 +2565,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -2582,9 +2582,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -2599,9 +2599,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -2616,9 +2616,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "light": 0.333
                     }
                 },
                 {
@@ -2633,9 +2633,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "light": 0.333
                     }
                 },
                 {
@@ -2650,9 +2650,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "fire": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "fire": 0.333
                     }
                 },
                 {
@@ -2667,9 +2667,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "fire": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "fire": 0.333
                     }
                 },
                 {
@@ -2684,9 +2684,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -2701,9 +2701,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -2718,9 +2718,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -2735,9 +2735,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -2752,9 +2752,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -2769,9 +2769,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -2921,9 +2921,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -2938,9 +2938,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -2955,9 +2955,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -2972,9 +2972,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -2989,9 +2989,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -3006,9 +3006,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "bow": 1,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "survival": 0.333,
+                        "light": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -3023,9 +3023,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "bow": 1,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "survival": 0.333,
+                        "light": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -3579,9 +3579,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -3596,9 +3596,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -3613,9 +3613,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -3630,9 +3630,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -3647,9 +3647,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -3664,9 +3664,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -3681,9 +3681,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -3698,9 +3698,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -3715,9 +3715,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -3732,9 +3732,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -3749,9 +3749,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -3766,9 +3766,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -3783,9 +3783,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -3800,9 +3800,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -3817,9 +3817,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -3834,9 +3834,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -3851,9 +3851,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -3868,9 +3868,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -3885,9 +3885,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -3902,9 +3902,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -3919,9 +3919,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -3936,9 +3936,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -3953,9 +3953,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -3970,9 +3970,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "fast": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "fast": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -3987,9 +3987,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -4004,9 +4004,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -4021,9 +4021,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -4038,9 +4038,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -4055,9 +4055,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -4072,9 +4072,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -4089,9 +4089,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "treasure": 0.3333333333333333,
-                        "fire": -0.3333333333333333,
-                        "swimming": -0.3333333333333333
+                        "treasure": 0.333,
+                        "fire": -0.333,
+                        "swimming": -0.333
                     }
                 },
                 {
@@ -4106,9 +4106,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "treasure": 0.3333333333333333,
-                        "fire": -0.3333333333333333,
-                        "swimming": -0.3333333333333333
+                        "treasure": 0.333,
+                        "fire": -0.333,
+                        "swimming": -0.333
                     }
                 },
                 {
@@ -4139,9 +4139,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -4156,9 +4156,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -4173,9 +4173,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -4190,9 +4190,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -4207,9 +4207,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -4224,9 +4224,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -4241,9 +4241,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -4258,9 +4258,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -4275,9 +4275,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -4292,9 +4292,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -4309,9 +4309,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -4326,9 +4326,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -4343,9 +4343,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -4360,9 +4360,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -4377,9 +4377,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -4394,9 +4394,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "light": 0.333
                     }
                 },
                 {
@@ -4411,9 +4411,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "light": 0.333
                     }
                 },
                 {
@@ -4428,9 +4428,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "fire": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "fire": 0.333
                     }
                 },
                 {
@@ -4445,9 +4445,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "fire": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "fire": 0.333
                     }
                 },
                 {
@@ -4462,9 +4462,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -4479,9 +4479,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -4496,9 +4496,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -4513,9 +4513,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -4530,9 +4530,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -4547,9 +4547,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -4699,9 +4699,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -4716,9 +4716,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -4733,9 +4733,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -4750,9 +4750,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -4767,9 +4767,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -4784,9 +4784,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "bow": 1,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "survival": 0.333,
+                        "light": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -4801,9 +4801,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "bow": 1,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "survival": 0.333,
+                        "light": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -5357,9 +5357,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -5374,9 +5374,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -5391,9 +5391,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -5408,9 +5408,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "melee": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "defense": 0.333,
+                        "melee": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -5425,9 +5425,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -5442,9 +5442,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -5459,9 +5459,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -5476,9 +5476,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "fire": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "fire": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -5493,9 +5493,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -5510,9 +5510,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -5527,9 +5527,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -5544,9 +5544,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "survival": 0.3333333333333333
+                        "defense": 0.333,
+                        "light": 0.333,
+                        "survival": 0.333
                     }
                 },
                 {
@@ -5561,9 +5561,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -5578,9 +5578,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -5595,9 +5595,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -5612,9 +5612,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "defense": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -5629,9 +5629,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -5646,9 +5646,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -5663,9 +5663,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -5680,9 +5680,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "undead": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "defense": 0.333,
+                        "undead": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -5697,9 +5697,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -5714,9 +5714,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -5731,9 +5731,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -5748,9 +5748,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "survival": 0.3333333333333333,
-                        "fast": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "survival": 0.333,
+                        "fast": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -5765,9 +5765,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -5782,9 +5782,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -5799,9 +5799,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "defense": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": 0.3333333333333333
+                        "defense": 0.333,
+                        "offense": 0.333,
+                        "melee": 0.333
                     }
                 },
                 {
@@ -5816,9 +5816,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -5833,9 +5833,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -5850,9 +5850,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "fast": 0.3333333333333333,
-                        "swimming": 0.3333333333333333,
-                        "fire": -0.3333333333333333
+                        "fast": 0.333,
+                        "swimming": 0.333,
+                        "fire": -0.333
                     }
                 },
                 {
@@ -5867,9 +5867,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "armor": 1,
-                        "treasure": 0.3333333333333333,
-                        "fire": -0.3333333333333333,
-                        "swimming": -0.3333333333333333
+                        "treasure": 0.333,
+                        "fire": -0.333,
+                        "swimming": -0.333
                     }
                 },
                 {
@@ -5884,9 +5884,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "armor": 1,
-                        "treasure": 0.3333333333333333,
-                        "fire": -0.3333333333333333,
-                        "swimming": -0.3333333333333333
+                        "treasure": 0.333,
+                        "fire": -0.333,
+                        "swimming": -0.333
                     }
                 },
                 {
@@ -5917,9 +5917,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -5934,9 +5934,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -5951,9 +5951,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -5968,9 +5968,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -5985,9 +5985,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "general": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "general": 0.333
                     }
                 },
                 {
@@ -6002,9 +6002,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -6019,9 +6019,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -6036,9 +6036,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -6053,9 +6053,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -6070,9 +6070,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": 0.333
                     }
                 },
                 {
@@ -6087,9 +6087,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -6104,9 +6104,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -6121,9 +6121,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -6138,9 +6138,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -6155,9 +6155,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "undead": -0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "undead": -0.333
                     }
                 },
                 {
@@ -6172,9 +6172,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "light": 0.333
                     }
                 },
                 {
@@ -6189,9 +6189,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "light": 0.333
                     }
                 },
                 {
@@ -6206,9 +6206,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "fire": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "fire": 0.333
                     }
                 },
                 {
@@ -6223,9 +6223,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "fire": 0.3333333333333333
+                        "melee": 0.333,
+                        "offense": 0.333,
+                        "fire": 0.333
                     }
                 },
                 {
@@ -6240,9 +6240,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -6257,9 +6257,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -6274,9 +6274,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "luck": 0.3333333333333333,
-                        "resource": 0.3333333333333333
+                        "melee": 0.333,
+                        "luck": 0.333,
+                        "resource": 0.333
                     }
                 },
                 {
@@ -6291,9 +6291,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -6308,9 +6308,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -6325,9 +6325,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "sword": 1,
-                        "melee": 0.3333333333333333,
-                        "survival": 0.3333333333333333,
-                        "area": 0.3333333333333333
+                        "melee": 0.333,
+                        "survival": 0.333,
+                        "area": 0.333
                     }
                 },
                 {
@@ -6477,9 +6477,9 @@
                         "enchanter": 1,
                         "low_level": 1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -6494,9 +6494,9 @@
                         "enchanter": 1,
                         "low_level": 0.5,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -6511,9 +6511,9 @@
                         "enchanter": 1,
                         "low_level": 0.1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -6528,9 +6528,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -6545,9 +6545,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "bow": 1,
-                        "general": 0.3333333333333333,
-                        "offense": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "general": 0.333,
+                        "offense": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -6562,9 +6562,9 @@
                         "enchanter": 1,
                         "low_level": -0.01,
                         "bow": 1,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "survival": 0.333,
+                        "light": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {
@@ -6579,9 +6579,9 @@
                         "enchanter": 1,
                         "low_level": -1,
                         "bow": 1,
-                        "survival": 0.3333333333333333,
-                        "light": 0.3333333333333333,
-                        "melee": -0.3333333333333333
+                        "survival": 0.333,
+                        "light": 0.333,
+                        "melee": -0.333
                     }
                 },
                 {

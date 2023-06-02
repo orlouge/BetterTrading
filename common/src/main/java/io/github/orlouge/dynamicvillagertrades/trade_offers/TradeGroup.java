@@ -64,7 +64,6 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
                     );
                     double weight = weightFunction(merchantAttributes, offer.affinity().orElse(offer.attributes()), maxValue[0], base_rate / group.randomness());
                     this.randomTrades.add(weight, offer);
-                    // BetterTradingMod.LOGGER.info("Weight for {}: {}", offer.toString(), weight);
                 }
             });
             this.weight = group.affinity.map(affinities -> weightFunction(merchantAttributes, affinities, 1, base_rate));
@@ -77,8 +76,6 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
                 affinity[0] += (value / normalization) * (merchantAttributes.getOrDefault(name, 0.0));
             });
             affinity[0] = affinity[0] + 0.0 >= 0.0 ? (1 + Math.pow(affinity[0], exp)) : (1 / Math.pow(-affinity[0], exp));
-            //affinity[0] = affinity[0] >= 0 ? Math.sqrt(affinity[0]) : -Math.sqrt(-affinity[0]);
-            //return 1 / (1 + Math.exp(-beta * affinity[0]));
             return affinity[0];
         }
 

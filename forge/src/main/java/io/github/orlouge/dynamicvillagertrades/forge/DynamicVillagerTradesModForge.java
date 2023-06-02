@@ -5,6 +5,7 @@ import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeOfferFactoryTyp
 import net.minecraft.util.Identifier;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.AddReloadListenerEvent;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -30,6 +31,11 @@ public class DynamicVillagerTradesModForge {
         eventBus.addListener(this::newRegistryEventListener);
         eventBus.addListener(this::registerEventListener);
         MinecraftForge.EVENT_BUS.addListener(this::reloadListenerEventHandler);
+        MinecraftForge.EVENT_BUS.addListener(this::registerCommandsEventHandler);
+    }
+
+    private void registerCommandsEventHandler(RegisterCommandsEvent event) {
+        DynamicVillagerTradesMod.registerCommands(event.getDispatcher());
     }
 
     private void reloadListenerEventHandler(AddReloadListenerEvent event) {

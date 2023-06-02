@@ -1,6 +1,7 @@
 package io.github.orlouge.dynamicvillagertrades.fabric;
 
 import io.github.orlouge.dynamicvillagertrades.DynamicVillagerTradesMod;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +17,7 @@ public class DynamicVillagerTradesModFabric implements ModInitializer {
 	public void onInitialize() {
 		DynamicVillagerTradesMod.init();
 		ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(PlatformHelperImpl.TRADE_OFFER_MANAGER);
+		CommandRegistrationCallback.EVENT.register((d, a, e) -> DynamicVillagerTradesMod.registerCommands(d));
 	}
 
 }

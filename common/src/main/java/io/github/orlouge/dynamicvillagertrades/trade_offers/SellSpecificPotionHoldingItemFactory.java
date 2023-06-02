@@ -1,7 +1,6 @@
 package io.github.orlouge.dynamicvillagertrades.trade_offers;
 
 import io.github.orlouge.dynamicvillagertrades.api.SerializableTradeOfferFactory;
-import io.github.orlouge.dynamicvillagertrades.mixin.TradeOffersAccessor;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.entity.Entity;
@@ -30,13 +29,13 @@ public class SellSpecificPotionHoldingItemFactory implements SerializableTradeOf
     private final Identifier potion;
 
     public static final Codec<SellSpecificPotionHoldingItemFactory> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            Registry.ITEM.getCodec().optionalFieldOf("arrow", Items.ARROW).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSecondBuy()),
-            Codec.INT.optionalFieldOf("second_count", 1).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSecondCount()),
-            Registry.ITEM.getCodec().optionalFieldOf("tipped_arrow", Items.TIPPED_ARROW).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSell().getItem()),
-            Codec.INT.fieldOf("price").forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getPrice()),
-            Codec.INT.optionalFieldOf("sell_count", 1).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getSellCount()),
-            Codec.INT.optionalFieldOf("max_uses", 12).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getMaxUses()),
-            Codec.INT.optionalFieldOf("experience", 2).forGetter(factory -> ((TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) factory).getExperience()),
+            Registry.ITEM.getCodec().optionalFieldOf("arrow", Items.ARROW).forGetter(factory -> factory.secondBuy),
+            Codec.INT.optionalFieldOf("second_count", 1).forGetter(factory -> factory.secondCount),
+            Registry.ITEM.getCodec().optionalFieldOf("tipped_arrow", Items.TIPPED_ARROW).forGetter(factory -> factory.sell.getItem()),
+            Codec.INT.fieldOf("price").forGetter(factory -> factory.price),
+            Codec.INT.optionalFieldOf("sell_count", 1).forGetter(factory -> factory.sellCount),
+            Codec.INT.optionalFieldOf("max_uses", 12).forGetter(factory -> factory.maxUses),
+            Codec.INT.optionalFieldOf("experience", 2).forGetter(factory -> factory.experience),
             Identifier.CODEC.fieldOf("potion").forGetter(SellSpecificPotionHoldingItemFactory::getPotion)
             ).apply(instance, SellSpecificPotionHoldingItemFactory::new));
 
