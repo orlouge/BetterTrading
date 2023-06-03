@@ -1,9 +1,7 @@
 package io.github.orlouge.dynamicvillagertrades.mixin;
 
 import io.github.orlouge.dynamicvillagertrades.DynamicVillagerTradesMod;
-import io.github.orlouge.dynamicvillagertrades.DynamicVillagerTradesMod;
 import io.github.orlouge.dynamicvillagertrades.ExtendedVillagerEntity;
-import io.github.orlouge.dynamicvillagertrades.WeightedRandomList;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.ExtendedTradeOffer;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeGroup;
 import net.minecraft.entity.EntityType;
@@ -142,44 +140,21 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
             TradeOfferList offerList = this.getOffers();
             offerList.clear();
 
-            List<TradeGroup.TradeSelector> allSelectors = new LinkedList<>();
-            WeightedRandomList<TradeGroup.TradeSelector> randomSelectors = new WeightedRandomList<>();
-            final int[] tradeCount = {0};
             int level = this.getVillagerData().getLevel();
-
-            offerGroups.forEach(group -> {
-                TradeGroup.TradeSelector selector = new TradeGroup.TradeSelector(group, level, this.attributes, this.random);
-                allSelectors.add(selector);
-                selector.selectMinimal();
-                if (selector.canSelect()) {
-                    randomSelectors.add(selector.getWeight(), selector);
-                }
-                tradeCount[0] += selector.getSelectedTrades().size();
-            });
-
-            while (tradeCount[0] < level * 2 && randomSelectors.size() > 0) {
-                TradeGroup.TradeSelector selector = randomSelectors.popSample(this.random);
-                selector.selectOne();
-                tradeCount[0] += 1;
-                if (selector.canSelect()) {
-                    randomSelectors.add(selector.getWeight(), selector);
-                }
-            }
+            TradeGroup.TradeGroupSelector selector = new TradeGroup.TradeGroupSelector(offerGroups, level * 2, level * 2, level, this.attributes, this.random);
 
             HashMap<String, NbtCompound> new_data = new HashMap<>();
-            allSelectors.forEach(selector -> {
-                selector.getSelectedTrades().forEach(tradeFactory -> {
-                    ExtendedTradeOffer generatedOffer = tradeFactory.create(
-                            this, this.random, tradeFactory.key().flatMap(
-                                    key -> Optional.ofNullable(this.extra_offer_data.get(key))
-                    ));
-                    if (generatedOffer != null) {
-                        offerList.add(generatedOffer);
-                        tradeFactory.key().ifPresent(key -> generatedOffer.extraNbt().ifPresent(
-                                data -> new_data.put(key, data))
-                        );
-                    }
-                });
+            selector.getSelectedTrades().forEach(tradeFactory -> {
+                ExtendedTradeOffer generatedOffer = tradeFactory.create(
+                        this, this.random, tradeFactory.key().flatMap(
+                                key -> Optional.ofNullable(this.extra_offer_data.get(key))
+                ));
+                if (generatedOffer != null) {
+                    offerList.add(generatedOffer);
+                    tradeFactory.key().ifPresent(key -> generatedOffer.extraNbt().ifPresent(
+                            data -> new_data.put(key, data))
+                    );
+                }
             });
             this.extra_offer_data.clear();
             this.extra_offer_data.putAll(new_data);

@@ -39,12 +39,12 @@ public class SellSpecificPotionHoldingItemFactory implements SerializableTradeOf
             Identifier.CODEC.fieldOf("potion").forGetter(SellSpecificPotionHoldingItemFactory::getPotion)
             ).apply(instance, SellSpecificPotionHoldingItemFactory::new));
 
-    public SellSpecificPotionHoldingItemFactory(Item arrow, int secondCount, Item tippedArrow, int sellCount, int price, int maxUses, int experience, Identifier potion) {
-        this.sell = new ItemStack(tippedArrow);
+    public SellSpecificPotionHoldingItemFactory(Item secondBuy, int secondCount, Item sellItem, int sellCount, int price, int maxUses, int experience, Identifier potion) {
+        this.sell = new ItemStack(sellItem);
         this.price = price;
         this.maxUses = maxUses;
         this.experience = experience;
-        this.secondBuy = arrow;
+        this.secondBuy = secondBuy;
         this.secondCount = secondCount;
         this.sellCount = sellCount;
         this.potion = potion;
