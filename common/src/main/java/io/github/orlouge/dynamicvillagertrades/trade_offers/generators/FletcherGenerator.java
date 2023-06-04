@@ -7,6 +7,7 @@ import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeGroup;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.item.ArrowItem;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
 import net.minecraft.recipe.BrewingRecipeRegistry;
@@ -45,10 +46,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
         }
         for (int i = 0; i < regularTrades.size(); i++) {
             Map<String, Double> attributes;
-            double tipped = AttributeUtils.getTradeItem(regularTrades.get(i)).map(item -> {
-                Identifier id = Registry.ITEM.getId(item);
-                return (id.equals(Items.ARROW) || id.equals(Items.SPECTRAL_ARROW)) ? 1.0 : -0.1;
-            }).orElse(-0.1);
+            double tipped = AttributeUtils.getTradeItem(regularTrades.get(i)).map(item -> item instanceof ArrowItem ? 1.0 : -0.1).orElse(-0.1);
             if (trades.length > 2) {
                 attributes = Map.of(AttributeUtils.generateTradeAttributeName(regularTrades.get(i), levelName + "_" + i), 0.3, "tipped", tipped);
             } else {
