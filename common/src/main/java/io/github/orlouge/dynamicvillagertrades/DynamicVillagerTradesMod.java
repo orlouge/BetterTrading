@@ -33,8 +33,7 @@ public class DynamicVillagerTradesMod {
     }
 
     public static Identifier id(String string) {
-        // backward compatibility because CF forced me to change the name of the mod
-        return new Identifier("bettertrading", string);
+        return new Identifier(MOD_ID, string);
     }
 
     public static void registerCommands(CommandDispatcher<ServerCommandSource> dispatcher) {
