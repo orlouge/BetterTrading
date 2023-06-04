@@ -1,0 +1,1527 @@
+{
+  "profession": "minecraft:shepherd",
+  "replace": true,
+  "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:white_wool",
+            "price": 18,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "saturation": -0.9986928104575163,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 1.0013071895424837,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:brown_wool",
+            "price": 18,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "saturation": -1.1981098982729093,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": -0.8018901017270906,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:black_wool",
+            "price": 18,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "saturation": -1.1088534107402033,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": -0.8911465892597968,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:gray_wool",
+            "price": 18,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "saturation": -1.4253731343283582,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": -0.5746268656716419,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 1,
+            "item": "minecraft:shears",
+            "price": 2,
+            "type": "minecraft:sell_item"
+          },
+          "level": "novice",
+          "attributes": {
+            "shears": 2.0,
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:white_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -0.9986928104575163,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": 1.0013071895424837,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:gray_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.4253731343283582,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": -0.5746268656716419,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:black_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.1088534107402033,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": -0.8911465892597968,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:light_blue_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:lime_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.5418105297566755,
+            "red": 0.5293072098392139,
+            "dye": 1.0,
+            "green": 0.9288822604041105,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:white_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -0.9986928104575163,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 1.0013071895424837,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:orange_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.480929101421942,
+            "red": 1.0400277936322804,
+            "wool": 1.0,
+            "green": 0.4790431049457776,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:magenta_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.8429752066115702,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.1570247933884297
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:light_blue_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:yellow_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.37704536872240435,
+            "red": 0.6554008154816358,
+            "wool": 1.0,
+            "green": 0.6554008154816358,
+            "brightness": 0.3121530003143241,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:lime_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.5418105297566755,
+            "red": 0.5293072098392139,
+            "wool": 1.0,
+            "green": 0.9288822604041105,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:pink_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.062522675051397,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 0.9374773249486033,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:gray_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.4253731343283582,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": -0.5746268656716419,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:light_gray_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -2.0,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:cyan_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.1318744729015935,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.8681255270984064
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:purple_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.7150837988826816,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.2849162011173185
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:blue_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:brown_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.1981098982729093,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": -0.8018901017270906,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:green_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -0.8308761721202544,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.6166564254751785,
+            "brightness": -0.5524674024045672,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:red_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.0922087205146533,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": -0.9077912794853468,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:black_wool",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.1088534107402033,
+            "red": 0.0,
+            "wool": 1.0,
+            "green": 0.0,
+            "brightness": -0.8911465892597968,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:white_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -0.9986928104575163,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 1.0013071895424837,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:orange_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.480929101421942,
+            "red": 1.0400277936322804,
+            "green": 0.4790431049457776,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:magenta_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.8429752066115702,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.1570247933884297,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:light_blue_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:yellow_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.37704536872240435,
+            "red": 0.6554008154816358,
+            "green": 0.6554008154816358,
+            "brightness": 0.3121530003143241,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:lime_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.5418105297566755,
+            "red": 0.5293072098392139,
+            "green": 0.9288822604041105,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:pink_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.062522675051397,
+            "green": 0.0,
+            "brightness": 0.9374773249486033,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:gray_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.4253731343283582,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.5746268656716419,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:light_gray_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -2.0,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:cyan_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.1318744729015935,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.8681255270984064,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:purple_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.7150837988826816,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.2849162011173185,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:blue_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:brown_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.1981098982729093,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.8018901017270906,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:green_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -0.8308761721202544,
+            "red": 0.0,
+            "green": 0.6166564254751785,
+            "brightness": -0.5524674024045672,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:red_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.0922087205146533,
+            "green": 0.0,
+            "brightness": -0.9077912794853468,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:black_carpet",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -1.1088534107402033,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.8911465892597968,
+            "blue": 0.0,
+            "carpet": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:yellow_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.37704536872240435,
+            "red": 0.6554008154816358,
+            "dye": 1.0,
+            "green": 0.6554008154816358,
+            "brightness": 0.3121530003143241,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:light_gray_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -2.0,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:orange_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.480929101421942,
+            "red": 1.0400277936322804,
+            "dye": 1.0,
+            "green": 0.4790431049457776,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:red_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.0922087205146533,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": -0.9077912794853468,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:pink_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.062522675051397,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": 0.9374773249486033,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:white_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.9986928104575163,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": 1.0013071895424837,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:yellow_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.37704536872240435,
+            "red": 0.6554008154816358,
+            "bed": 1.0,
+            "green": 0.6554008154816358,
+            "brightness": 0.3121530003143241,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:red_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.0922087205146533,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": -0.9077912794853468,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:black_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -1.1088534107402033,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": -0.8911465892597968,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:blue_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:brown_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -1.1981098982729093,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": -0.8018901017270906,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:cyan_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -1.1318744729015935,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.8681255270984064
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:gray_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -1.4253731343283582,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": -0.5746268656716419,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:green_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.8308761721202544,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.6166564254751785,
+            "brightness": -0.5524674024045672,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:light_blue_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:light_gray_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -2.0,
+            "red": 0.0,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:lime_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.5418105297566755,
+            "red": 0.5293072098392139,
+            "bed": 1.0,
+            "green": 0.9288822604041105,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:magenta_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.8429752066115702,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.1570247933884297
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:orange_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.480929101421942,
+            "red": 1.0400277936322804,
+            "bed": 1.0,
+            "green": 0.4790431049457776,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:pink_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.062522675051397,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": 0.9374773249486033,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:purple_bed",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.7150837988826816,
+            "bed": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.2849162011173185
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:brown_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -1.1981098982729093,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": -0.8018901017270906,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:purple_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.7150837988826816,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.2849162011173185
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:blue_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:green_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.8308761721202544,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.6166564254751785,
+            "brightness": -0.5524674024045672,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:magenta_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.8429752066115702,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.1570247933884297
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:cyan_dye",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -1.1318744729015935,
+            "red": 0.0,
+            "dye": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.8681255270984064
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:white_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.9986928104575163,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": 1.0013071895424837,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:blue_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:light_blue_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 2.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:red_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.0922087205146533,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": -0.9077912794853468,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:pink_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 1.062522675051397,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": 0.9374773249486033,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:green_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.8308761721202544,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.6166564254751785,
+            "brightness": -0.5524674024045672,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:lime_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.5418105297566755,
+            "red": 0.5293072098392139,
+            "banner": 1.0,
+            "green": 0.9288822604041105,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:gray_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -1.4253731343283582,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": -0.5746268656716419,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:black_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -1.1088534107402033,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": -0.8911465892597968,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:purple_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.7150837988826816,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.2849162011173185
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:magenta_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.8429752066115702,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 1.1570247933884297
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:cyan_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -1.1318744729015935,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.8681255270984064
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:brown_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -1.1981098982729093,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": -0.8018901017270906,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:yellow_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.37704536872240435,
+            "red": 0.6554008154816358,
+            "banner": 1.0,
+            "green": 0.6554008154816358,
+            "brightness": 0.3121530003143241,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:orange_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.480929101421942,
+            "red": 1.0400277936322804,
+            "banner": 1.0,
+            "green": 0.4790431049457776,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:light_gray_banner",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -2.0,
+            "red": 0.0,
+            "banner": 1.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "count": 3,
+            "experience": 30,
+            "item": "minecraft:painting",
+            "price": 2,
+            "type": "minecraft:sell_item"
+          },
+          "level": "master",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 1,
+      "max_trades": 1
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "profession": "minecraft:cleric",
+  "replace": true,
+  "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:rotten_flesh",
+            "price": 32,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "count": 2,
+            "experience": 1,
+            "item": "minecraft:redstone",
+            "type": "minecraft:sell_item"
+          },
+          "level": "novice",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:gold_ingot",
+            "price": 3,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "experience": 5,
+            "item": "minecraft:lapis_lazuli",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:rabbit_foot",
+            "price": 2,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "experience": 10,
+            "item": "minecraft:glowstone",
+            "price": 4,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:scute",
+            "price": 4,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "scute": 1.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:glass_bottle",
+            "price": 9,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "glass_bottle": 1.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:ender_pearl",
+            "price": 5,
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "ender_pearl": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:nether_wart",
+            "price": 22,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "master",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "experience": 30,
+            "item": "minecraft:experience_bottle",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "master",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    }
+  }
+}

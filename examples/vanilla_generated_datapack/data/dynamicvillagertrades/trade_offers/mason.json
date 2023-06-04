@@ -1,0 +1,828 @@
+{
+  "profession": "minecraft:mason",
+  "replace": true,
+  "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:clay_ball",
+            "price": 10,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "stone": -2.0
+          }
+        },
+        {
+          "offer": {
+            "count": 10,
+            "max_uses": 16,
+            "experience": 1,
+            "item": "minecraft:brick",
+            "type": "minecraft:sell_item"
+          },
+          "level": "novice",
+          "attributes": {
+            "stone": -2.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:stone",
+            "price": 20,
+            "max_uses": 16,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -0.6666666666666666,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:chiseled_stone_bricks",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "saturation": -0.6666666666666666,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:granite",
+            "price": 16,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.39322655261205436,
+            "red": 0.2734401140546124,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:andesite",
+            "price": 16,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.6666666666666666,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:diorite",
+            "price": 16,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.32498582086296407,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.3416808458037026,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 10,
+            "item": "minecraft:dripstone_block",
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.35951564098775973,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.30715102567890695,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 10,
+            "item": "minecraft:polished_andesite",
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.6666666666666666,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 10,
+            "item": "minecraft:polished_diorite",
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.32498582086296407,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.3416808458037026,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 10,
+            "item": "minecraft:polished_granite",
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "saturation": -0.39322655261205436,
+            "red": 0.2734401140546124,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:quartz",
+            "price": 12,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "quartz": 1.0,
+            "stone": -1.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:orange_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.42466886294925504,
+            "green": 0.0,
+            "brightness": -0.24199780371741167,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:white_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.3934575844692599,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.27320908219740675,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:blue_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.4383169499745674,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.22834971669209933,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:light_blue_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.6666666666666666,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:gray_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.37277124893703034,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.2938954177296363,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:light_gray_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.6666666666666666,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:black_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.33963672659713223,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.3270299400695344,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:red_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.3451060105587081,
+            "green": 0.0,
+            "brightness": -0.32156065610795853,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:pink_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.3437342033913883,
+            "red": 0.3229324632752784,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:magenta_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.6666666666666666,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:lime_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.3203350284625583,
+            "red": 0.0,
+            "green": 0.1620717778614176,
+            "brightness": -0.18425986034269073,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:green_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.3931994037055441,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.27346726296112256,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:cyan_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.5118421991949611,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.15482446747170558,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:purple_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.4688333451344144,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.19783332153225233,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:yellow_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.40485829959514175,
+            "green": 0.26180836707152494,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:brown_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.35951564098775973,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.30715102567890695,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:orange_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.16030970047398066,
+            "red": 0.3466759312107601,
+            "green": 0.15968103498192587,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:white_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.3328976034858388,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.3337690631808279,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:blue_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.6666666666666666,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:light_blue_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.6666666666666666,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:gray_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.47512437810945274,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.19154228855721397,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:light_gray_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.6666666666666666,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:black_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.36961780358006774,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.29704886308659895,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:red_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.36406957350488445,
+            "green": 0.0,
+            "brightness": -0.30259709316178224,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:pink_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.3541742250171323,
+            "green": 0.0,
+            "brightness": 0.31249244164953444,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:magenta_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.2809917355371901,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.38567493112947654,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:lime_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.18060350991889185,
+            "red": 0.1764357366130713,
+            "green": 0.3096274201347035,
+            "brightness": 0.0,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:green_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.2769587240400848,
+            "red": 0.0,
+            "green": 0.20555214182505951,
+            "brightness": -0.18415580080152238,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:cyan_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.37729149096719783,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.2893751756994688,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:purple_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.0,
+            "red": 0.2383612662942272,
+            "green": 0.0,
+            "brightness": 0.0,
+            "blue": 0.4283054003724395,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:yellow_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 0.12568178957413478,
+            "red": 0.21846693849387858,
+            "green": 0.21846693849387858,
+            "brightness": 0.1040510001047747,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:brown_glazed_terracotta",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": -0.39936996609096975,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": -0.2672967005756969,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "experience": 30,
+            "item": "minecraft:quartz_pillar",
+            "type": "minecraft:sell_item"
+          },
+          "level": "master",
+          "attributes": {
+            "saturation": -0.32498582086296407,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.3416808458037026,
+            "blue": 0.0,
+            "raw": -0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        },
+        {
+          "offer": {
+            "experience": 30,
+            "item": "minecraft:quartz_block",
+            "type": "minecraft:sell_item"
+          },
+          "level": "master",
+          "attributes": {
+            "saturation": -0.32498582086296407,
+            "red": 0.0,
+            "green": 0.0,
+            "brightness": 0.3416808458037026,
+            "blue": 0.0,
+            "raw": 0.6666666666666666,
+            "stone": 0.6666666666666666
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    }
+  }
+}

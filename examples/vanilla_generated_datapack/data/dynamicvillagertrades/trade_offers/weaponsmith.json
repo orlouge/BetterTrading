@@ -1,0 +1,161 @@
+{
+  "profession": "minecraft:weaponsmith",
+  "replace": true,
+  "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:coal",
+            "price": 15,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "coal": 2.0,
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 1,
+            "item": "minecraft:iron_axe",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "novice",
+          "attributes": {
+            "iron": 2.0,
+            "axe": 1.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 3,
+            "experience": 1,
+            "item": "minecraft:iron_sword",
+            "base_price": 2,
+            "type": "minecraft:sell_enchanted_tool"
+          },
+          "level": "novice",
+          "attributes": {
+            "sword": 1.0,
+            "iron": 2.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:iron_ingot",
+            "price": 4,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "material": 1.0,
+            "iron": 2.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 5,
+            "item": "minecraft:bell",
+            "price": 36,
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:flint",
+            "price": 24,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 1,
+      "max_trades": 1
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:diamond",
+            "price": 1,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {
+            "diamond": 2.0,
+            "material": 1.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 3,
+            "experience": 15,
+            "price_multiplier": 0.2,
+            "item": "minecraft:diamond_axe",
+            "base_price": 12,
+            "type": "minecraft:sell_enchanted_tool"
+          },
+          "level": "expert",
+          "attributes": {
+            "diamond": 2.0,
+            "axe": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "max_uses": 3,
+            "experience": 30,
+            "price_multiplier": 0.2,
+            "item": "minecraft:diamond_sword",
+            "base_price": 8,
+            "type": "minecraft:sell_enchanted_tool"
+          },
+          "level": "master",
+          "attributes": {
+            "sword": 1.0,
+            "diamond": 2.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 1,
+      "max_trades": 1
+    }
+  }
+}

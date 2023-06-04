@@ -1,0 +1,193 @@
+{
+  "profession": "minecraft:fisherman",
+  "replace": true,
+  "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:string",
+            "price": 20,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "string": 1.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:coal",
+            "price": 10,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "coal": 1.0
+          }
+        },
+        {
+          "offer": {
+            "sell_item": "minecraft:cooked_cod",
+            "sell_count": 6,
+            "max_uses": 16,
+            "experience": 1,
+            "item": "minecraft:cod",
+            "second_count": 6,
+            "type": "minecraft:process_item"
+          },
+          "level": "novice",
+          "attributes": {
+            "cooked_cod": 1.0
+          }
+        },
+        {
+          "offer": {
+            "max_uses": 16,
+            "experience": 1,
+            "item": "minecraft:cod_bucket",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "novice",
+          "attributes": {
+            "cod_bucket": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:cod",
+            "price": 15,
+            "max_uses": 16,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "cod": 1.0
+          }
+        },
+        {
+          "offer": {
+            "sell_item": "minecraft:cooked_salmon",
+            "sell_count": 6,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:salmon",
+            "second_count": 6,
+            "type": "minecraft:process_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "cooked_salmon": 1.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 5,
+            "item": "minecraft:campfire",
+            "price": 2,
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "campfire": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:salmon",
+            "price": 13,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "max_uses": 3,
+            "experience": 10,
+            "price_multiplier": 0.2,
+            "item": "minecraft:fishing_rod",
+            "base_price": 3,
+            "type": "minecraft:sell_enchanted_tool"
+          },
+          "level": "journeyman",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:tropical_fish",
+            "price": 6,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 1,
+      "max_trades": 1
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:pufferfish",
+            "price": 4,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "master",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "experience": 30,
+            "items": {
+              "minecraft:plains": "minecraft:oak_boat",
+              "minecraft:taiga": "minecraft:spruce_boat",
+              "minecraft:snow": "minecraft:spruce_boat",
+              "minecraft:desert": "minecraft:jungle_boat",
+              "minecraft:jungle": "minecraft:jungle_boat",
+              "minecraft:savanna": "minecraft:acacia_boat",
+              "minecraft:swamp": "minecraft:dark_oak_boat"
+            },
+            "type": "minecraft:type_aware_buy_for_one_emerald"
+          },
+          "level": "master",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    }
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "profession": "minecraft:farmer",
+  "replace": true,
+  "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:wheat",
+            "price": 20,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "wheat": 1.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:potato",
+            "price": 26,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "potato": 1.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:carrot",
+            "price": 22,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "carrot": 1.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:beetroot",
+            "price": 15,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "beetroot": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 6,
+            "max_uses": 16,
+            "experience": 1,
+            "item": "minecraft:bread",
+            "type": "minecraft:sell_item"
+          },
+          "level": "novice",
+          "attributes": {
+            "bread": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:pumpkin",
+            "price": 6,
+            "experience": 10,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "pumpkin": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "experience": 5,
+            "item": "minecraft:pumpkin_pie",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "pumpkin_pie": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 4,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:apple",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "apple": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "count": 18,
+            "experience": 10,
+            "item": "minecraft:cookie",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "journeyman",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "item": "minecraft:melon",
+            "price": 4,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "experience": 15,
+            "item": "minecraft:cake",
+            "type": "minecraft:sell_item"
+          },
+          "level": "expert",
+          "attributes": {
+            "cake": 1.0
+          }
+        },
+        {
+          "offer": {
+            "effect": "minecraft:night_vision",
+            "duration": 100,
+            "experience": 15,
+            "type": "minecraft:sell_suspicious_stew"
+          },
+          "level": "expert",
+          "attributes": {
+            "night_vision": 1.0
+          }
+        },
+        {
+          "offer": {
+            "effect": "minecraft:jump_boost",
+            "duration": 160,
+            "experience": 15,
+            "type": "minecraft:sell_suspicious_stew"
+          },
+          "level": "expert",
+          "attributes": {
+            "jump_boost": 1.0
+          }
+        },
+        {
+          "offer": {
+            "effect": "minecraft:weakness",
+            "duration": 140,
+            "experience": 15,
+            "type": "minecraft:sell_suspicious_stew"
+          },
+          "level": "expert",
+          "attributes": {
+            "weakness": 1.0
+          }
+        },
+        {
+          "offer": {
+            "effect": "minecraft:blindness",
+            "duration": 120,
+            "experience": 15,
+            "type": "minecraft:sell_suspicious_stew"
+          },
+          "level": "expert",
+          "attributes": {
+            "blindness": 1.0
+          }
+        },
+        {
+          "offer": {
+            "effect": "minecraft:poison",
+            "duration": 280,
+            "experience": 15,
+            "type": "minecraft:sell_suspicious_stew"
+          },
+          "level": "expert",
+          "attributes": {
+            "poison": 1.0
+          }
+        },
+        {
+          "offer": {
+            "effect": "minecraft:saturation",
+            "duration": 7,
+            "experience": 15,
+            "type": "minecraft:sell_suspicious_stew"
+          },
+          "level": "expert",
+          "attributes": {
+            "saturation": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "count": 3,
+            "experience": 30,
+            "item": "minecraft:golden_carrot",
+            "price": 3,
+            "type": "minecraft:sell_item"
+          },
+          "level": "master",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "count": 3,
+            "experience": 30,
+            "item": "minecraft:glistering_melon_slice",
+            "price": 4,
+            "type": "minecraft:sell_item"
+          },
+          "level": "master",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    }
+  }
+}

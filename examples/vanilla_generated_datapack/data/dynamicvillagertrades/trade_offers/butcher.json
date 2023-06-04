@@ -1,0 +1,168 @@
+{
+  "profession": "minecraft:butcher",
+  "replace": true,
+  "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:chicken",
+            "price": 14,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "chicken": 1.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:porkchop",
+            "price": 7,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "porkchop": 1.0
+          }
+        },
+        {
+          "offer": {
+            "item": "minecraft:rabbit",
+            "price": 4,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "novice",
+          "attributes": {
+            "rabbit": 1.0
+          }
+        },
+        {
+          "offer": {
+            "experience": 1,
+            "item": "minecraft:rabbit_stew",
+            "type": "minecraft:sell_item"
+          },
+          "level": "novice",
+          "attributes": {
+            "rabbit_stew": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:coal",
+            "price": 15,
+            "max_uses": 16,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "coal": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 5,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:cooked_porkchop",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "cooked_porkchop": 1.0
+          }
+        },
+        {
+          "offer": {
+            "count": 8,
+            "max_uses": 16,
+            "experience": 5,
+            "item": "minecraft:cooked_chicken",
+            "type": "minecraft:sell_item"
+          },
+          "level": "apprentice",
+          "attributes": {
+            "cooked_chicken": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:mutton",
+            "price": 7,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {}
+        },
+        {
+          "offer": {
+            "item": "minecraft:beef",
+            "price": 10,
+            "max_uses": 16,
+            "experience": 20,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "journeyman",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:dried_kelp_block",
+            "price": 10,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "expert",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 1,
+      "max_trades": 1
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "item": "minecraft:sweet_berries",
+            "price": 10,
+            "experience": 30,
+            "type": "minecraft:buy_for_one_emerald"
+          },
+          "level": "master",
+          "attributes": {}
+        }
+      ],
+      "replace": false,
+      "min_trades": 1,
+      "max_trades": 1
+    }
+  }
+}
