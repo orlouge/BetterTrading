@@ -7,6 +7,7 @@ import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeOfferFactoryTyp
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
+import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegisterEvent;
 import org.apache.logging.log4j.Level;
@@ -14,12 +15,17 @@ import org.apache.logging.log4j.Level;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Supplier;
+import java.nio.file.Path;
 
 public class PlatformHelperImpl {
 
     public static final TradeOfferManager tradeOfferManager = new TradeOfferManager();
 
     public static final RegistryHelperForge<TradeOfferFactoryType<?>> tradeOfferFactoryTypeRegistryHelper = new RegistryHelperForge<>(() -> DynamicVillagerTradesModForge.supplier.get());
+
+    public static Path getConfigDirectory() {
+        return FMLPaths.CONFIGDIR.get();
+    }
 
     public static PlatformHelper.RegistryHelper<TradeOfferFactoryType<?>> getTradeOfferRegistry() {
         return tradeOfferFactoryTypeRegistryHelper;

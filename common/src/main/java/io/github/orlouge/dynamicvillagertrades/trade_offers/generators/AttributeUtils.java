@@ -27,8 +27,8 @@ public class AttributeUtils {
             for (Map.Entry<String, Integer> attribute : entry.getValue().entrySet()) {
                 Integer previousPriority = attributePriority.getOrDefault(attribute.getKey(), 0);
                 attributePriority.put(attribute.getKey(), previousPriority + attribute.getValue());
-                Set<T> entrieset = attributeEntries.computeIfAbsent(attribute.getKey(), s -> new HashSet<>());
-                entrieset.add(entry.getKey());
+                Set<T> entriesSet = attributeEntries.computeIfAbsent(attribute.getKey(), s -> new HashSet<>());
+                entriesSet.add(entry.getKey());
             }
             entriesNeedingAttributes.add(entry.getKey());
         }

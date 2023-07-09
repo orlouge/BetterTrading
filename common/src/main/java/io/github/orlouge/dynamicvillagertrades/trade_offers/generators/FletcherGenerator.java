@@ -47,16 +47,16 @@ public class FletcherGenerator extends VanillaLikeGenerator
         for (int i = 0; i < regularTrades.size(); i++) {
             Map<String, Double> attributes;
             double tipped = AttributeUtils.getTradeItem(regularTrades.get(i)).map(item -> item instanceof ArrowItem ? 1.0 : -0.1).orElse(-0.1);
+            attributes = Map.of("arrow", tipped);
             if (trades.length > 2) {
-                attributes = Map.of(AttributeUtils.generateTradeAttributeName(regularTrades.get(i), levelName + "_" + i), 0.3, "tipped", tipped);
-            } else {
-                attributes = Map.of("tipped", tipped);
+                String trade_name = AttributeUtils.generateTradeAttributeName(regularTrades.get(i), levelName + "_" + i);
+                if (!trade_name.equals("arrow")) attributes = Map.of(trade_name, 0.3, "arrow", tipped);
             }
             offers.add(cachedOffer(regularTrades.get(i), i, level, levelName, attributes));
         }
         for (int i = 0; i < potionHoldingTrades.size(); i++) {
             TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor accessor = (TradeOffersAccessor.SellPotionHoldingItemFactoryAccessor) potionHoldingTrades.get(i);
-            Map<String, Double> affinities = Map.of("tipped", 1.0);
+            Map<String, Double> affinities = Map.of("arrow", 1.0);
             List<ExtendedTradeOffer.Factory> suboffers = new ArrayList<>();
             for (Potion potion : potionAttributesGenerator.getAllPotions()) {
                 Map<String, Double> attributes = potionAttributesGenerator.getAttributes(potion);
@@ -72,10 +72,10 @@ public class FletcherGenerator extends VanillaLikeGenerator
                 );
                 suboffers.add(new ExtendedTradeOffer.Factory(trade, level, attributes, Optional.empty(), Optional.empty(), false));
             }
-            subgroups.put("" + (i + 1) * level + "_potion_holding_" + levelName, new TradeGroup(false, 0, 1, 0.3, Optional.of(affinities), suboffers, Optional.empty()));
+            subgroups.put("" + (i + 1) * level + "_potion_holding_" + levelName, new TradeGroup(false, 0, 1, 0.3, Optional.of(affinities), suboffers, Optional.empty(), Optional.empty()));
         }
         int min_trades = Math.min(trades.length, 2);
-        return new TradeGroup(false, min_trades, min_trades, 1.0, Optional.empty(), offers, Optional.of(subgroups));
+        return new TradeGroup(false, min_trades, min_trades, 1.0, Optional.empty(), offers, Optional.of(subgroups), Optional.empty());
     }
 
     private static PotionAttributesGenerator potionAttributesGenerator = null;

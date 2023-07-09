@@ -26,11 +26,41 @@ import java.util.zip.ZipOutputStream;
 
 public class DynamicVillagerTradesMod {
     public static final String MOD_ID = "dynamicvillagertrades";
+    public static boolean NO_BOOK_DUPLICATES = true;
+    public static double GLOBAL_RANDOMNESS = 1.0;
+    public static int REFRESH_DELAY = 0;
+
+    public static final String CONFIG_FNAME = PlatformHelper.getConfigDirectory() + "/" + MOD_ID + ".properties";
 
     public static void init() {
         // forces the class to load early
         TradeOfferFactoryType.init();
+
+        Properties defaultProps = new Properties();
+        defaultProps.setProperty("no_book_duplicates", Boolean.toString(NO_BOOK_DUPLICATES));
+        defaultProps.setProperty("global_randomness", Double.toString(GLOBAL_RANDOMNESS));
+        defaultProps.setProperty("refresh_delay", Integer.toString(REFRESH_DELAY));
+
+        File f = new File(CONFIG_FNAME);
+        if (f.isFile() && f.canRead()) {
+            try (FileInputStream in = new FileInputStream(f)) {
+                Properties props = new Properties(defaultProps);
+                props.load(in);
+                NO_BOOK_DUPLICATES = Boolean.parseBoolean(props.getProperty("no_book_duplicates"));
+                GLOBAL_RANDOMNESS = Double.parseDouble(props.getProperty("global_randomness"));
+                REFRESH_DELAY = Integer.parseInt(props.getProperty("refresh_delay"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            try (FileOutputStream out = new FileOutputStream(CONFIG_FNAME)) {
+                defaultProps.store(out, "");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
+
 
     public static Identifier id(String string) {
         return new Identifier(MOD_ID, string);

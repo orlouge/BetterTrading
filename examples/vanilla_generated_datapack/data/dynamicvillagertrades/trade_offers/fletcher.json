@@ -14,7 +14,7 @@
           "level": "novice",
           "attributes": {
             "stick": 0.3,
-            "tipped": -0.1
+            "arrow": -0.1
           }
         },
         {
@@ -26,8 +26,7 @@
           },
           "level": "novice",
           "attributes": {
-            "tipped": 1.0,
-            "arrow": 0.3
+            "arrow": 1.0
           }
         },
         {
@@ -41,8 +40,8 @@
           },
           "level": "novice",
           "attributes": {
-            "tipped": -0.1,
-            "flint": 0.3
+            "flint": 0.3,
+            "arrow": -0.1
           }
         }
       ],
@@ -62,7 +61,7 @@
           },
           "level": "apprentice",
           "attributes": {
-            "tipped": -0.1
+            "arrow": -0.1
           }
         },
         {
@@ -74,7 +73,7 @@
           },
           "level": "apprentice",
           "attributes": {
-            "tipped": -0.1
+            "arrow": -0.1
           }
         }
       ],
@@ -95,7 +94,7 @@
           },
           "level": "journeyman",
           "attributes": {
-            "tipped": -0.1
+            "arrow": -0.1
           }
         },
         {
@@ -107,7 +106,7 @@
           },
           "level": "journeyman",
           "attributes": {
-            "tipped": -0.1
+            "arrow": -0.1
           }
         }
       ],
@@ -128,7 +127,7 @@
           },
           "level": "expert",
           "attributes": {
-            "tipped": -0.1
+            "arrow": -0.1
           }
         },
         {
@@ -141,7 +140,7 @@
           },
           "level": "expert",
           "attributes": {
-            "tipped": -0.1
+            "arrow": -0.1
           }
         }
       ],
@@ -162,7 +161,7 @@
           "level": "master",
           "attributes": {
             "tripwire_hook": 0.3,
-            "tipped": -0.1
+            "arrow": -0.1
           }
         },
         {
@@ -175,95 +174,22 @@
           },
           "level": "master",
           "attributes": {
-            "tipped": -0.1,
+            "arrow": -0.1,
             "crossbow": 0.3
           }
         }
       ],
       "subgroups": {
         "5_potion_holding_master": {
-          "randomness": 0.3,
           "affinity": {
-            "tipped": 1.0
+            "arrow": 1.0
           },
           "trades": [
             {
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:night_vision",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "vision": 1.0,
-                "strong": -0.01,
-                "long": -0.01,
-                "beneficial": 1.0,
-                "continuous": 1.0
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:slow_falling",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "strong": -0.01,
-                "movement": 1.0,
-                "long": -0.01,
-                "beneficial": 1.0,
-                "continuous": 1.0
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:water_breathing",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "strong": -0.01,
-                "long": -0.01,
-                "beneficial": 1.0,
-                "continuous": 1.0,
-                "water_breathing": 1.0
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:turtle_master",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "strong": -0.01,
-                "movement": 1.0,
-                "long": -0.01,
-                "beneficial": 1.0,
-                "continuous": 1.0
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:strong_turtle_master",
+                "potion": "minecraft:strong_strength",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
@@ -271,8 +197,8 @@
               "level": "master",
               "attributes": {
                 "strong": 0.5,
-                "strong_turtle_master": 0.75,
-                "movement": 0.75,
+                "strong_strength": 0.75,
+                "strength": 0.75,
                 "long": -0.1,
                 "beneficial": 0.75,
                 "continuous": 0.75
@@ -282,38 +208,57 @@
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:long_water_breathing",
+                "potion": "minecraft:strong_poison",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
               },
               "level": "master",
               "attributes": {
-                "strong": -0.1,
-                "long_water_breathing": 0.75,
-                "long": 0.5,
-                "beneficial": 0.75,
+                "health": 0.75,
+                "strong": 0.5,
+                "poison": 0.75,
+                "long": -0.1,
                 "continuous": 0.75,
-                "water_breathing": 0.75
+                "strong_poison": 0.75
               }
             },
             {
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:long_invisibility",
+                "potion": "minecraft:long_fire_resistance",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
               },
               "level": "master",
               "attributes": {
-                "vision": 0.75,
                 "strong": -0.1,
+                "fire_resistance": 0.75,
                 "long": 0.5,
                 "beneficial": 0.75,
-                "long_invisibility": 0.75,
-                "continuous": 0.75
+                "continuous": 0.75,
+                "long_fire_resistance": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:long_leaping",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong": -0.1,
+                "movement": 0.75,
+                "long": 0.5,
+                "beneficial": 0.75,
+                "continuous": 0.75,
+                "long_leaping": 0.75
               }
             },
             {
@@ -356,18 +301,19 @@
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:harming",
+                "potion": "minecraft:long_regeneration",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
               },
               "level": "master",
               "attributes": {
-                "health": 1.0,
-                "harming": 1.0,
-                "strong": -0.01,
-                "long": -0.01,
-                "instant": 1.0
+                "health": 0.75,
+                "strong": -0.1,
+                "long_regeneration": 0.75,
+                "long": 0.5,
+                "beneficial": 0.75,
+                "continuous": 0.75
               }
             },
             {
@@ -392,6 +338,61 @@
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
+                "potion": "minecraft:invisibility",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "vision": 1.0,
+                "strong": -0.01,
+                "long": -0.01,
+                "beneficial": 1.0,
+                "continuous": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:leaping",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong": -0.01,
+                "movement": 1.0,
+                "long": -0.01,
+                "beneficial": 1.0,
+                "continuous": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:long_invisibility",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "vision": 0.75,
+                "strong": -0.1,
+                "long": 0.5,
+                "beneficial": 0.75,
+                "long_invisibility": 0.75,
+                "continuous": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
                 "potion": "minecraft:strong_slowness",
                 "second_count": 5,
                 "price": 2,
@@ -404,6 +405,136 @@
                 "slowness": 0.75,
                 "movement": 0.75,
                 "long": -0.1,
+                "continuous": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:long_slow_falling",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong": -0.1,
+                "movement": 0.75,
+                "long": 0.5,
+                "beneficial": 0.75,
+                "long_slow_falling": 0.75,
+                "continuous": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:harming",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "health": 1.0,
+                "harming": 1.0,
+                "strong": -0.01,
+                "long": -0.01,
+                "instant": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:turtle_master",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong": -0.01,
+                "movement": 1.0,
+                "long": -0.01,
+                "beneficial": 1.0,
+                "continuous": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:weakness",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "weakness": 1.0,
+                "strong": -0.01,
+                "strength": 1.0,
+                "long": -0.01,
+                "continuous": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:strong_regeneration",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "health": 0.75,
+                "strong_regeneration": 0.75,
+                "strong": 0.5,
+                "long": -0.1,
+                "beneficial": 0.75,
+                "continuous": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:long_night_vision",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "vision": 0.75,
+                "strong": -0.1,
+                "long_night_vision": 0.75,
+                "long": 0.5,
+                "beneficial": 0.75,
+                "continuous": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:strong_leaping",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong_leaping": 0.75,
+                "strong": 0.5,
+                "movement": 0.75,
+                "long": -0.1,
+                "beneficial": 0.75,
                 "continuous": 0.75
               }
             },
@@ -430,222 +561,16 @@
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:poison",
+                "potion": "minecraft:long_swiftness",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
               },
               "level": "master",
               "attributes": {
-                "health": 1.0,
-                "strong": -0.01,
-                "poison": 1.0,
-                "long": -0.01,
-                "continuous": 1.0
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:strong_strength",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "strong": 0.5,
-                "strong_strength": 0.75,
-                "strength": 0.75,
-                "long": -0.1,
-                "beneficial": 0.75,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:long_poison",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "health": 0.75,
+                "long_swiftness": 0.75,
                 "strong": -0.1,
-                "long_poison": 0.75,
-                "poison": 0.75,
-                "long": 0.5,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:invisibility",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "vision": 1.0,
-                "strong": -0.01,
-                "long": -0.01,
-                "beneficial": 1.0,
-                "continuous": 1.0
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:strong_swiftness",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "strong": 0.5,
                 "movement": 0.75,
-                "long": -0.1,
-                "beneficial": 0.75,
-                "strong_swiftness": 0.75,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:long_turtle_master",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "strong": -0.1,
-                "long_turtle_master": 0.75,
-                "movement": 0.75,
-                "long": 0.5,
-                "beneficial": 0.75,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:strong_harming",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "health": 0.75,
-                "harming": 0.75,
-                "strong": 0.5,
-                "strong_harming": 0.75,
-                "long": -0.1,
-                "instant": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:long_night_vision",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "vision": 0.75,
-                "strong": -0.1,
-                "long_night_vision": 0.75,
-                "long": 0.5,
-                "beneficial": 0.75,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:healing",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "health": 1.0,
-                "strong": -0.01,
-                "long": -0.01,
-                "beneficial": 1.0,
-                "instant": 1.0
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:long_weakness",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "long_weakness": 0.75,
-                "weakness": 0.75,
-                "strong": -0.1,
-                "strength": 0.75,
-                "long": 0.5,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:strong_healing",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "health": 0.75,
-                "strong": 0.5,
-                "strong_healing": 0.75,
-                "long": -0.1,
-                "beneficial": 0.75,
-                "instant": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:long_regeneration",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "health": 0.75,
-                "strong": -0.1,
-                "long_regeneration": 0.75,
                 "long": 0.5,
                 "beneficial": 0.75,
                 "continuous": 0.75
@@ -674,37 +599,18 @@
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:strong_regeneration",
+                "potion": "minecraft:long_weakness",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
               },
               "level": "master",
               "attributes": {
-                "health": 0.75,
-                "strong_regeneration": 0.75,
-                "strong": 0.5,
-                "long": -0.1,
-                "beneficial": 0.75,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:long_swiftness",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "long_swiftness": 0.75,
+                "long_weakness": 0.75,
+                "weakness": 0.75,
                 "strong": -0.1,
-                "movement": 0.75,
+                "strength": 0.75,
                 "long": 0.5,
-                "beneficial": 0.75,
                 "continuous": 0.75
               }
             },
@@ -712,76 +618,18 @@
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:long_fire_resistance",
+                "potion": "minecraft:poison",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
               },
               "level": "master",
               "attributes": {
-                "strong": -0.1,
-                "fire_resistance": 0.75,
-                "long": 0.5,
-                "beneficial": 0.75,
-                "continuous": 0.75,
-                "long_fire_resistance": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:long_slow_falling",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "strong": -0.1,
-                "movement": 0.75,
-                "long": 0.5,
-                "beneficial": 0.75,
-                "long_slow_falling": 0.75,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:strong_leaping",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "strong_leaping": 0.75,
-                "strong": 0.5,
-                "movement": 0.75,
-                "long": -0.1,
-                "beneficial": 0.75,
-                "continuous": 0.75
-              }
-            },
-            {
-              "offer": {
-                "sell_count": 5,
-                "experience": 30,
-                "potion": "minecraft:strong_poison",
-                "second_count": 5,
-                "price": 2,
-                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
-              },
-              "level": "master",
-              "attributes": {
-                "health": 0.75,
-                "strong": 0.5,
-                "poison": 0.75,
-                "long": -0.1,
-                "continuous": 0.75,
-                "strong_poison": 0.75
+                "health": 1.0,
+                "strong": -0.01,
+                "poison": 1.0,
+                "long": -0.01,
+                "continuous": 1.0
               }
             },
             {
@@ -806,7 +654,26 @@
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:leaping",
+                "potion": "minecraft:strong_swiftness",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong": 0.5,
+                "movement": 0.75,
+                "long": -0.1,
+                "beneficial": 0.75,
+                "strong_swiftness": 0.75,
+                "continuous": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:water_breathing",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
@@ -814,10 +681,85 @@
               "level": "master",
               "attributes": {
                 "strong": -0.01,
-                "movement": 1.0,
+                "long": -0.01,
+                "beneficial": 1.0,
+                "continuous": 1.0,
+                "water_breathing": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:strong_healing",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "health": 0.75,
+                "strong": 0.5,
+                "strong_healing": 0.75,
+                "long": -0.1,
+                "beneficial": 0.75,
+                "instant": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:long_water_breathing",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong": -0.1,
+                "long_water_breathing": 0.75,
+                "long": 0.5,
+                "beneficial": 0.75,
+                "continuous": 0.75,
+                "water_breathing": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:night_vision",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "vision": 1.0,
+                "strong": -0.01,
                 "long": -0.01,
                 "beneficial": 1.0,
                 "continuous": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:long_poison",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "health": 0.75,
+                "strong": -0.1,
+                "long_poison": 0.75,
+                "poison": 0.75,
+                "long": 0.5,
+                "continuous": 0.75
               }
             },
             {
@@ -842,7 +784,25 @@
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:long_leaping",
+                "potion": "minecraft:slow_falling",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong": -0.01,
+                "movement": 1.0,
+                "long": -0.01,
+                "beneficial": 1.0,
+                "continuous": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:long_turtle_master",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
@@ -850,35 +810,74 @@
               "level": "master",
               "attributes": {
                 "strong": -0.1,
+                "long_turtle_master": 0.75,
                 "movement": 0.75,
                 "long": 0.5,
                 "beneficial": 0.75,
-                "continuous": 0.75,
-                "long_leaping": 0.75
+                "continuous": 0.75
               }
             },
             {
               "offer": {
                 "sell_count": 5,
                 "experience": 30,
-                "potion": "minecraft:weakness",
+                "potion": "minecraft:healing",
                 "second_count": 5,
                 "price": 2,
                 "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
               },
               "level": "master",
               "attributes": {
-                "weakness": 1.0,
+                "health": 1.0,
                 "strong": -0.01,
-                "strength": 1.0,
                 "long": -0.01,
-                "continuous": 1.0
+                "beneficial": 1.0,
+                "instant": 1.0
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:strong_turtle_master",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "strong": 0.5,
+                "strong_turtle_master": 0.75,
+                "movement": 0.75,
+                "long": -0.1,
+                "beneficial": 0.75,
+                "continuous": 0.75
+              }
+            },
+            {
+              "offer": {
+                "sell_count": 5,
+                "experience": 30,
+                "potion": "minecraft:strong_harming",
+                "second_count": 5,
+                "price": 2,
+                "type": "dynamicvillagertrades:sell_specific_potion_holding_item"
+              },
+              "level": "master",
+              "attributes": {
+                "health": 0.75,
+                "harming": 0.75,
+                "strong": 0.5,
+                "strong_harming": 0.75,
+                "long": -0.1,
+                "instant": 0.75
               }
             }
           ],
           "replace": false,
           "min_trades": 0,
-          "max_trades": 1
+          "max_trades": 1,
+          "randomness": 0.3
         }
       },
       "replace": false,

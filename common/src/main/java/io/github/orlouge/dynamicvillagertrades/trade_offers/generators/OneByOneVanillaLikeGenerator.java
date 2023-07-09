@@ -24,7 +24,7 @@ public class OneByOneVanillaLikeGenerator extends VanillaLikeGenerator {
             offers.add(cachedOffer(trades[i], i, level, levelName, attributes));
         }
         int min_trades = Math.min(trades.length, 2);
-        return new TradeGroup(false, min_trades, min_trades, 1.0, Optional.empty(), offers, Optional.empty());
+        return new TradeGroup(false, min_trades, min_trades, 1.0, Optional.empty(), offers, Optional.empty(), Optional.empty());
     }
 
     protected Map<String, Double> getAttributes(TradeOffers.Factory trade, Map<String, Double> defaultAttributes) {

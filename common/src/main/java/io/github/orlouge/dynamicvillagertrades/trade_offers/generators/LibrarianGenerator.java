@@ -1,5 +1,6 @@
 package io.github.orlouge.dynamicvillagertrades.trade_offers.generators;
 
+import io.github.orlouge.dynamicvillagertrades.DynamicVillagerTradesMod;
 import io.github.orlouge.dynamicvillagertrades.mixin.TradeOffersAccessor;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.EnchantSpecificBookFactory;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.ExtendedTradeOffer;
@@ -60,12 +61,16 @@ public class LibrarianGenerator extends VanillaLikeGenerator {
                         Registry.ENCHANTMENT.getId(enchantment.getLeft()),
                         enchantment.getRight()
                 );
-                suboffers.add(new ExtendedTradeOffer.Factory(trade, level, attributes, Optional.empty(), Optional.empty(), false));
+                Optional<String> key = Optional.empty();
+                if (DynamicVillagerTradesMod.NO_BOOK_DUPLICATES) {
+                    key = Optional.of(Registry.ENCHANTMENT.getId(enchantment.getLeft()) + "");
+                }
+                suboffers.add(new ExtendedTradeOffer.Factory(trade, level, attributes, Optional.empty(), key, false));
             }
-            subgroups.put("" + (i + 1) * level + "_enchanted_books_" + levelName, new TradeGroup(false, 0, 1, 0.1, Optional.of(affinities), suboffers, Optional.empty()));
+            subgroups.put("" + (i + 1) * level + "_enchanted_books_" + levelName, new TradeGroup(false, 0, 1, 0.1, Optional.of(affinities), suboffers, Optional.empty(), Optional.empty()));
         }
         int min_trades = Math.min(trades.length, 2);
-        return new TradeGroup(false, min_trades, min_trades, 1.0, Optional.empty(), offers, Optional.of(subgroups));
+        return new TradeGroup(false, min_trades, min_trades, 1.0, Optional.empty(), offers, Optional.of(subgroups), Optional.of("enchantments"));
     }
 
     private static EnchantmentAttributesGenerator enchantmentAttributesGenerator = null;
@@ -108,8 +113,11 @@ public class LibrarianGenerator extends VanillaLikeGenerator {
                 if (enchantmentAttributes != null) {
                     for (String secondaryAttribute : secondaryAttributes.getValue()) {
                         double attributeValue = secondary / secondaryAttributes.getValue().size();
-                        if (negativeAttributes.containsKey(secondaryAttribute)) attributeValue = -attributeValue;
-                        enchantmentAttributes.putIfAbsent(secondaryAttribute, attributeValue);
+                        if (negativeAttributes.containsKey(secondaryAttribute)) {
+                            enchantmentAttributes.putIfAbsent(negativeAttributes.get(secondaryAttribute), -attributeValue);
+                        } else {
+                            enchantmentAttributes.putIfAbsent(secondaryAttribute, attributeValue);
+                        }
                     }
                 }
             }
@@ -197,8 +205,8 @@ public class LibrarianGenerator extends VanillaLikeGenerator {
                 Map.entry("speed", "speed"),
                 Map.entry("looting", "luck"),
                 Map.entry("luck", "luck"),
-                Map.entry("lucky", "lucky"),
-                Map.entry("fortune", "fortune"),
+                Map.entry("lucky", "luck"),
+                Map.entry("fortune", "luck"),
                 Map.entry("aspect", "aspect"),
                 Map.entry("protection", "defense"),
                 Map.entry("defense", "defense"),

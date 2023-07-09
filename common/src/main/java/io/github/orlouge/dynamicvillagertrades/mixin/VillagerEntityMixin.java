@@ -29,6 +29,8 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
 
     @Shadow public abstract void setAttacker(@Nullable LivingEntity attacker);
 
+    private int dvtRestockCount = 0;
+
     private final Map<String, Double> attributes = new HashMap<>();
     private final Map<String, NbtCompound> extra_offer_data = new HashMap<>();
     private static final String attributes_key = DynamicVillagerTradesMod.MOD_ID + "_attributes";
@@ -116,7 +118,12 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
 
     @Inject(method = "restock", at = @At("HEAD"))
     private void refreshOnRestock(CallbackInfo ci) {
-        refreshOffers();
+        if (dvtRestockCount >= DynamicVillagerTradesMod.REFRESH_DELAY) {
+            refreshOffers();
+            dvtRestockCount = 0;
+        } else {
+            dvtRestockCount += 1;
+        }
     }
 
     @Inject(method = "restockAndUpdateDemandBonus", at = @At("HEAD"))
@@ -141,7 +148,7 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
             offerList.clear();
 
             int level = this.getVillagerData().getLevel();
-            TradeGroup.TradeGroupSelector selector = new TradeGroup.TradeGroupSelector(offerGroups, level * 2, level * 2, level, this.attributes, this.random);
+            TradeGroup.TradeGroupSelector selector = new TradeGroup.TradeGroupSelector(offerGroups, level * 2, level * 2, level, this.attributes, this.random, new HashMap<>());
 
             HashMap<String, NbtCompound> new_data = new HashMap<>();
             selector.getSelectedTrades().forEach(tradeFactory -> {

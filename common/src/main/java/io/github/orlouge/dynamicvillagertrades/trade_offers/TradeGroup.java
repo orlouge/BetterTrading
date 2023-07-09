@@ -1,5 +1,6 @@
 package io.github.orlouge.dynamicvillagertrades.trade_offers;
 
+import io.github.orlouge.dynamicvillagertrades.DynamicVillagerTradesMod;
 import io.github.orlouge.dynamicvillagertrades.WeightedRandomList;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -14,7 +15,8 @@ import java.util.stream.Stream;
 public record TradeGroup(boolean replace, int minTrades, int maxTrades, double randomness,
                          Optional<Map<String, Double>> affinity,
                          List<ExtendedTradeOffer.Factory> offers,
-                         Optional<Map<String, TradeGroup>> subGroups) {
+                         Optional<Map<String, TradeGroup>> subGroups,
+                         Optional<String> uniqueKeySet) {
     public static final Codec<TradeGroup> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.BOOL.fieldOf("replace").forGetter(TradeGroup::replace),
             Codec.INT.fieldOf("min_trades").forGetter(TradeGroup::minTrades),
@@ -22,7 +24,8 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
             Codec.DOUBLE.optionalFieldOf("randomness", 1.0).forGetter(TradeGroup::randomness),
             Codec.unboundedMap(Codec.STRING, Codec.DOUBLE).optionalFieldOf("affinity").forGetter(TradeGroup::affinity),
             ExtendedTradeOffer.Factory.CODEC.listOf().fieldOf("trades").forGetter(TradeGroup::offers),
-            Codecs.createLazy(() -> Codec.unboundedMap(Codec.STRING, TradeGroup.CODEC)).optionalFieldOf("subgroups").forGetter(TradeGroup::subGroups)
+            Codecs.createLazy(() -> Codec.unboundedMap(Codec.STRING, TradeGroup.CODEC)).optionalFieldOf("subgroups").forGetter(TradeGroup::subGroups),
+            Codec.STRING.optionalFieldOf("unique_key_set").forGetter(TradeGroup::uniqueKeySet)
     ).apply(instance, TradeGroup::new));
 
     public static TradeGroup merge(TradeGroup first, TradeGroup second) {
@@ -41,7 +44,8 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
                     first.randomness * second.randomness,
                     first.affinity,
                     Stream.concat(first.offers.stream(), second.offers.stream()).collect(Collectors.toList()),
-                    Optional.of(subgroups)
+                    Optional.of(subgroups),
+                    first.uniqueKeySet.or(() -> second.uniqueKeySet)
             );
         }
     }
@@ -50,7 +54,8 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
         public abstract double getWeight();
         public abstract List<ExtendedTradeOffer.Factory> getSelectedTrades();
         public abstract boolean canSelect();
-        public abstract void selectOne();
+        public abstract Optional<String> selectOne(Set<String> excludedKeys);
+        public Optional<String> selectOne() { return this.selectOne(Collections.emptySet()); }
 
         public static double weightFunction(Map<String, Double> merchantAttributes, Map<String, Double> affinities, double normalization, double exp) {
             final Double[] affinity = new Double[1];
@@ -69,38 +74,41 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
         private final int maxTrades;
         private final Optional<Double> weight;
         private final Random random;
+        private final Set<String> selectedKeys;
         private static final double base_rate = 0.5;
 
-        public TradeGroupSelector(Collection<TradeSelector> allSelectors, int minTrades, int maxTrades, Optional<Double> weight, int merchantLevel, Map<String, Double> merchantAttributes, Random random) {
+        public TradeGroupSelector(Collection<TradeSelector> allSelectors, int minTrades, int maxTrades, Optional<Double> weight, int merchantLevel, Map<String, Double> merchantAttributes, Random random, Set<String> selectedKeys) {
             this.allSelectors = allSelectors;
             this.random = random;
             this.weight = weight;
             this.maxTrades = maxTrades;
+            this.selectedKeys = selectedKeys;
             allSelectors.forEach(selector -> { if (selector.canSelect()) this.randomSelectors.add(selector.getWeight(), selector);});
             selectN(minTrades);
         }
 
-        public TradeGroupSelector(TradeGroup group, int merchantLevel, Map<String, Double> merchantAttributes, Random random) {
+        public TradeGroupSelector(TradeGroup group, int merchantLevel, Map<String, Double> merchantAttributes, Random random, HashMap<String, HashSet<String>> uniqueKeySets) {
             this(
                     Stream.concat(
-                        group.offers().stream().map(offer -> new SingleTradeOfferSelector(offer, base_rate, group.randomness(), merchantLevel, merchantAttributes)),
-                        new TreeMap<>(group.subGroups().orElse(Collections.emptyMap())).values().stream().map(subgroup -> new TradeGroupSelector(subgroup, merchantLevel, merchantAttributes, random))
+                        group.offers().stream().map(offer -> new SingleTradeOfferSelector(offer, base_rate, group.randomness() * DynamicVillagerTradesMod.GLOBAL_RANDOMNESS, merchantLevel, merchantAttributes)),
+                        new TreeMap<>(group.subGroups().orElse(Collections.emptyMap())).values().stream().map(subgroup -> new TradeGroupSelector(subgroup, merchantLevel, merchantAttributes, random, uniqueKeySets))
                     ).collect(Collectors.toList()),
                     group.minTrades, group.maxTrades,
                     group.affinity().map(affinities -> weightFunction(merchantAttributes, affinities, 1, base_rate)),
-                    merchantLevel, merchantAttributes, random
+                    merchantLevel, merchantAttributes, random,
+                    group.uniqueKeySet.map(s -> uniqueKeySets.computeIfAbsent(s, s2 -> new HashSet<>())).orElse(null)
             );
         }
 
-        public TradeGroupSelector(Collection<TradeGroup> groups, Optional<Double> weight, int minTrades, int maxTrades, int merchantLevel, Map<String, Double> merchantAttributes, Random random) {
+        public TradeGroupSelector(Collection<TradeGroup> groups, Optional<Double> weight, int minTrades, int maxTrades, int merchantLevel, Map<String, Double> merchantAttributes, Random random, HashMap<String, HashSet<String>> uniqueKeySets) {
             this(
-                    groups.stream().map(group -> new TradeGroupSelector(group, merchantLevel, merchantAttributes, random)).collect(Collectors.toList()),
-                    minTrades, maxTrades, weight, merchantLevel, merchantAttributes, random
+                    groups.stream().map(group -> new TradeGroupSelector(group, merchantLevel, merchantAttributes, random, uniqueKeySets)).collect(Collectors.toList()),
+                    minTrades, maxTrades, weight, merchantLevel, merchantAttributes, random, null
             );
         }
 
-        public TradeGroupSelector(Collection<TradeGroup> groups, int minTrades, int maxTrades, int merchantLevel, Map<String, Double> merchantAttributes, Random random) {
-            this(groups, Optional.empty(), minTrades, maxTrades, merchantLevel, merchantAttributes, random);
+        public TradeGroupSelector(Collection<TradeGroup> groups, int minTrades, int maxTrades, int merchantLevel, Map<String, Double> merchantAttributes, Random random, HashMap<String, HashSet<String>> uniqueKeySets) {
+            this(groups, Optional.empty(), minTrades, maxTrades, merchantLevel, merchantAttributes, random, uniqueKeySets);
         }
 
         @Override
@@ -119,17 +127,27 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
         }
 
         @Override
-        public void selectOne() {
-            TradeGroup.TradeSelector selector = randomSelectors.popSample(this.random);
-            selector.selectOne();
-            if (selector.canSelect()) {
-                randomSelectors.add(selector.getWeight(), selector);
+        public Optional<String> selectOne(Set<String> excludedKeys) {
+            Optional<String> selectedKey = null;
+            while (selectedKey == null) {
+                TradeGroup.TradeSelector selector = randomSelectors.popSample(this.random);
+                if (selector == null) return null;
+                if (this.selectedKeys != null) {
+                    excludedKeys = new HashSet<>(excludedKeys);
+                    excludedKeys.addAll(this.selectedKeys);
+                }
+                selectedKey = selector.selectOne(excludedKeys);
+                if (selector.canSelect()) {
+                    randomSelectors.add(selector.getWeight(), selector);
+                }
             }
+            if (this.selectedKeys != null && selectedKey.isPresent()) this.selectedKeys.add(selectedKey.get());
+            return selectedKey;
         }
 
         private void selectN(int trades) {
             for (int i = 0; this.canSelect() && i < trades; i++) {
-                this.selectOne();
+                this.selectOne(Collections.emptySet());
             }
         }
     }
@@ -137,7 +155,7 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
     public static class SingleTradeOfferSelector extends TradeSelector {
         private final ExtendedTradeOffer.Factory offer;
         private final Double weight;
-        private final boolean invalid;
+        private boolean invalid;
         private boolean selected = false;
 
         public SingleTradeOfferSelector(ExtendedTradeOffer.Factory offer, double base_rate, double randomness, int merchantLevel, Map<String, Double> merchantAttributes) {
@@ -175,8 +193,15 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
         }
 
         @Override
-        public void selectOne() {
-            this.selected = !this.invalid;
+        public Optional<String> selectOne(Set<String> excludedKeys) {
+            if (this.invalid || offer.key().map(excludedKeys::contains).orElse(false)) {
+                this.selected = false;
+                this.invalid = true;
+                return null;
+            } else {
+                this.selected = true;
+                return offer.key();
+            }
         }
     }
 }
