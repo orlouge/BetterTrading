@@ -5,8 +5,8 @@ import com.mojang.datafixers.util.Either;
 import com.mojang.serialization.Codec;
 
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.dynamic.Codecs;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.village.VillagerType;
 
 import java.util.Map;
@@ -17,7 +17,7 @@ public class CodecHelper {
     /**
      * An ItemStack codec to allow both explicit creation or just an item id
      */
-    public static final Codec<ItemStack> SIMPLE_ITEM_STACK_CODEC = Codec.either(ItemStack.CODEC, Registry.ITEM.getCodec())
+    public static final Codec<ItemStack> SIMPLE_ITEM_STACK_CODEC = Codec.either(ItemStack.CODEC, Registries.ITEM.getCodec())
             .xmap(either -> either.map(Function.identity(), ItemStack::new), stack -> stack.hasNbt() ? Either.left(stack) : Either.right(stack.getItem()));
 
     /**
@@ -25,7 +25,7 @@ public class CodecHelper {
      * @param elementCodec a codec for the element of the map
      */
     public static <T> Codec<Map<VillagerType, T>> villagerTypeMap(Codec<T> elementCodec) {
-        return DefaultMapCodec.of(Registry.VILLAGER_TYPE.getCodec(), elementCodec, Registry.VILLAGER_TYPE);
+        return DefaultMapCodec.of(Registries.VILLAGER_TYPE.getCodec(), elementCodec, Registries.VILLAGER_TYPE);
     }
 
     /**

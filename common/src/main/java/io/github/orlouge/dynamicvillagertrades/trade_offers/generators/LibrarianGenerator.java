@@ -8,7 +8,7 @@ import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeGroup;
 import net.minecraft.enchantment.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerProfession;
 
@@ -58,12 +58,12 @@ public class LibrarianGenerator extends VanillaLikeGenerator {
                 Map<String, Double> attributes = enchantmentAttributesGenerator.getAttributes(enchantment.getLeft(), enchantment.getRight());
                 TradeOffers.Factory trade = new EnchantSpecificBookFactory(
                         experience,
-                        Registry.ENCHANTMENT.getId(enchantment.getLeft()),
+                        Registries.ENCHANTMENT.getId(enchantment.getLeft()),
                         enchantment.getRight()
                 );
                 Optional<String> key = Optional.empty();
                 if (DynamicVillagerTradesMod.NO_BOOK_DUPLICATES) {
-                    key = Optional.of(Registry.ENCHANTMENT.getId(enchantment.getLeft()) + "");
+                    key = Optional.of(Registries.ENCHANTMENT.getId(enchantment.getLeft()) + "");
                 }
                 suboffers.add(new ExtendedTradeOffer.Factory(trade, level, attributes, Optional.empty(), key, false));
             }
@@ -101,7 +101,7 @@ public class LibrarianGenerator extends VanillaLikeGenerator {
         private Map<Enchantment, Map<String, Double>> getLevelIndependentAttributes(double primary, double secondary, int nSecondaryAttributes) {
             Map<Enchantment, Map<String, Double>> attributes = new HashMap<>();
             Map<Enchantment, Map<String, Integer>> candidateSecondaryAttributes = new HashMap<>();
-            Registry.ENCHANTMENT.forEach(enchantment -> {
+            Registries.ENCHANTMENT.forEach(enchantment -> {
                 if (!enchantment.isAvailableForEnchantedBookOffer()) return;
                 Map<String, Double> enchantmentAttributes = new HashMap<>();
                 enchantmentAttributes.put(getPrimaryAttribute(enchantment), primary);
@@ -130,20 +130,20 @@ public class LibrarianGenerator extends VanillaLikeGenerator {
             if (enchantment.isTreasure()) attributes.put("treasure", 10000);
             if (enchantment instanceof ProtectionEnchantment) attributes.put("defense", 1000);
             if (enchantment instanceof LuckEnchantment) attributes.put("luck", 1000);
-            if (enchantment.type == EnchantmentTarget.BOW || enchantment.type == EnchantmentTarget.CROSSBOW || enchantment.type == EnchantmentTarget.TRIDENT) attributes.put("ranged", 100);
-            if (enchantment.type == EnchantmentTarget.TRIDENT || enchantment.type == EnchantmentTarget.FISHING_ROD) attributes.put("water", 100);
-            if (enchantment.type == EnchantmentTarget.WEAPON) attributes.put("melee", 100);
+            if (enchantment.target == EnchantmentTarget.BOW || enchantment.target == EnchantmentTarget.CROSSBOW || enchantment.target == EnchantmentTarget.TRIDENT) attributes.put("ranged", 100);
+            if (enchantment.target == EnchantmentTarget.TRIDENT || enchantment.target == EnchantmentTarget.FISHING_ROD) attributes.put("water", 100);
+            if (enchantment.target == EnchantmentTarget.WEAPON) attributes.put("melee", 100);
             if (enchantment instanceof DamageEnchantment || enchantment instanceof PowerEnchantment || enchantment instanceof ImpalingEnchantment) attributes.put("offense", 10);
             if (enchantment instanceof FireAspectEnchantment || enchantment instanceof ChannelingEnchantment || enchantment instanceof MultishotEnchantment || enchantment instanceof ThornsEnchantment) attributes.put("offense", 10);
             if (enchantment instanceof ThornsEnchantment) attributes.put("melee", 100);
             if (enchantment instanceof UnbreakingEnchantment || enchantment instanceof MendingEnchantment || enchantment instanceof SilkTouchEnchantment || enchantment instanceof InfinityEnchantment) attributes.put("resource", 10);
             if (enchantment instanceof AquaAffinityEnchantment || enchantment instanceof EfficiencyEnchantment || enchantment instanceof DepthStriderEnchantment || enchantment instanceof LureEnchantment || enchantment instanceof RiptideEnchantment) attributes.put("speed", 100);
             if (isFire(enchantment)) attributes.put("fire", 100);
-            if (enchantment.type == EnchantmentTarget.ARMOR_CHEST) attributes.put("armor_chest", 2);
-            if (enchantment.type == EnchantmentTarget.ARMOR_FEET) attributes.put("armor_feet", 2);
-            if (enchantment.type == EnchantmentTarget.ARMOR_LEGS) attributes.put("armor_legs", 2);
-            if (enchantment.type == EnchantmentTarget.ARMOR_HEAD) attributes.put("armor_head", 2);
-            Optional.ofNullable(Registry.ENCHANTMENT.getId(enchantment)).ifPresent(id -> {
+            if (enchantment.target == EnchantmentTarget.ARMOR_CHEST) attributes.put("armor_chest", 2);
+            if (enchantment.target == EnchantmentTarget.ARMOR_FEET) attributes.put("armor_feet", 2);
+            if (enchantment.target == EnchantmentTarget.ARMOR_LEGS) attributes.put("armor_legs", 2);
+            if (enchantment.target == EnchantmentTarget.ARMOR_HEAD) attributes.put("armor_head", 2);
+            Optional.ofNullable(Registries.ENCHANTMENT.getId(enchantment)).ifPresent(id -> {
                 List<String> keywords = List.of(id.getPath().split("_"));
                 for (String keyword : keywords) {
                     String attribute = knownKeywords.get(keyword);
@@ -166,7 +166,7 @@ public class LibrarianGenerator extends VanillaLikeGenerator {
         }
 
         private String getPrimaryAttribute(Enchantment enchantment) {
-            return switch (enchantment.type) {
+            return switch (enchantment.target) {
                 case ARMOR, ARMOR_HEAD, ARMOR_LEGS, ARMOR_CHEST, ARMOR_FEET, WEARABLE -> "armor";
                 case BOW -> "bow";
                 case CROSSBOW -> "crossbow";

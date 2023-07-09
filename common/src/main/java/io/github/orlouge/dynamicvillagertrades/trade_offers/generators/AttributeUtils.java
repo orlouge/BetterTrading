@@ -4,15 +4,16 @@ import io.github.orlouge.dynamicvillagertrades.mixin.TradeOffersAccessor;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.EnchantSpecificBookFactory;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.SellSpecificPotionHoldingItemFactory;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.DyeColor;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryEntry;
-import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.world.gen.structure.Structure;
 
@@ -94,7 +95,7 @@ public class AttributeUtils {
 
     public static String generateTradeAttributeName(TradeOffers.Factory factory, String fallback) {
         if (factory instanceof TradeOffers.SellSuspiciousStewFactory stewfactory) {
-            Optional<RegistryEntry<StatusEffect>> entry = Registry.STATUS_EFFECT.getEntry(StatusEffect.getRawId(((TradeOffersAccessor.SellSuspiciousStewFactoryAccessor) stewfactory).getEffect()));
+            Optional<RegistryEntry.Reference<StatusEffect>> entry = Registries.STATUS_EFFECT.getEntry(StatusEffect.getRawId(((TradeOffersAccessor.SellSuspiciousStewFactoryAccessor) stewfactory).getEffect()));
             if (entry.isPresent() && entry.get().getKey().isPresent()) return entry.get().getKey().get().getValue().getPath();
         }
         if (factory instanceof TradeOffers.EnchantBookFactory) {
@@ -110,13 +111,13 @@ public class AttributeUtils {
         if (factory instanceof SellSpecificPotionHoldingItemFactory sellpotionfactory) {
             return sellpotionfactory.getPotion().getPath();
         }
-        return getTradeItem(factory).map(i -> Registry.ITEM.getId(i).getPath()).orElse(fallback);
+        return getTradeItem(factory).map(i -> Registries.ITEM.getId(i).getPath()).orElse(fallback);
     }
 
 
-    public static Optional<Material> getBlockMaterial(Item item) {
+    public static Optional<Instrument> getBlockInstrument(Item item) {
         if (item instanceof BlockItem blockItem) {
-            return Optional.of(blockItem.getBlock().getDefaultState().getMaterial());
+            return Optional.of(blockItem.getBlock().getDefaultState().getInstrument());
         }
         return Optional.empty();
     }
@@ -173,12 +174,12 @@ public class AttributeUtils {
         return Optional.empty();
     }
     public static Optional<String> getMod(Item item) {
-        String namespace = Registry.ITEM.getId(item).getNamespace();
+        String namespace = Registries.ITEM.getId(item).getNamespace();
         return namespace == Identifier.DEFAULT_NAMESPACE ? Optional.empty() : Optional.of(namespace);
     }
 
     public static Optional<String> getIngotMaterialName(Item item, boolean alwaysReturn) {
-        String name = Registry.ITEM.getId(item).getPath();
+        String name = Registries.ITEM.getId(item).getPath();
         if (name.endsWith("_ingot")) return Optional.of(name.replace("_ingot", ""));
         if (name.equals("diamond")) return Optional.of("diamond");
         if (alwaysReturn) {

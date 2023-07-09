@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 @Mixin(ZombieEntity.class)
 public class ZombieEntityMixin {
     @Inject(method = "onKilledOther", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/mob/ZombieVillagerEntity;setXp(I)V"), locals = LocalCapture.CAPTURE_FAILHARD)
-    public void transferExtraData(ServerWorld world, LivingEntity other, CallbackInfoReturnable<Boolean> cir, VillagerEntity villagerEntity, ZombieVillagerEntity zombieVillagerEntity)
+    public void transferExtraData(ServerWorld world, LivingEntity other, CallbackInfoReturnable<Boolean> cir, boolean bl, VillagerEntity villagerEntity, ZombieVillagerEntity zombieVillagerEntity)
     {
         if (other instanceof ExtendedVillagerEntity extendedVillager && zombieVillagerEntity instanceof ExtendedVillagerEntity extendedZombieVillager) {
             NbtCompound extraData = new NbtCompound();

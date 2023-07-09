@@ -8,11 +8,10 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ArrowItem;
-import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
 import net.minecraft.recipe.BrewingRecipeRegistry;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerProfession;
 
@@ -68,7 +67,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
                         accessor.getPrice(),
                         accessor.getMaxUses(),
                         accessor.getExperience(),
-                        Registry.POTION.getId(potion)
+                        Registries.POTION.getId(potion)
                 );
                 suboffers.add(new ExtendedTradeOffer.Factory(trade, level, attributes, Optional.empty(), Optional.empty(), false));
             }
@@ -98,7 +97,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
         private Map<Potion, Map<String, Double>> getAllAttributes(double primary, double secondary, int nSecondaryAttributes) {
             Map<Potion, Map<String, Double>> attributes = new HashMap<>();
             Map<Potion, Map<String, Integer>> candidateSecondaryAttributes = new HashMap<>();
-            Registry.POTION.forEach(potion -> {
+            Registries.POTION.forEach(potion -> {
                 if (potion.getEffects().isEmpty() || !BrewingRecipeRegistry.isBrewable(potion)) return;
                 Map<String, Double> potionAttributes = new HashMap<>(getPrimaryAttributes(potion));
                 attributes.put(potion, potionAttributes);
@@ -117,7 +116,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
         }
 
         private Map<String, Double> getPrimaryAttributes(Potion potion) {
-            String name = Registry.POTION.getId(potion).getPath();
+            String name = Registries.POTION.getId(potion).getPath();
             if (name.startsWith("long_")) return Map.of("long", 0.5, "strong", -0.1);
             else if (name.startsWith("strong_")) return Map.of("long", -0.1, "strong", 0.5);
             else return Map.of("long", -0.01, "strong", -0.01);
@@ -125,7 +124,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
 
         private Map<String, Integer> getSecondaryAttributes(Potion potion) {
             Map<String, Integer> attributes = new HashMap<>();
-            Identifier id = Registry.POTION.getId(potion);
+            Identifier id = Registries.POTION.getId(potion);
             for (StatusEffectInstance effect : potion.getEffects()) {
                 for (String attribute : getStatusEffectAttributes(effect.getEffectType())) {
                     attributes.put(attribute, 10);
@@ -144,7 +143,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
             else if (statusEffect.getCategory() == StatusEffectCategory.HARMFUL) attributes.add("harmful");
             if (statusEffect.isInstant()) attributes.add("instant");
             else attributes.add("continuous");
-            Identifier id = Registry.STATUS_EFFECT.getId(statusEffect);
+            Identifier id = Registries.STATUS_EFFECT.getId(statusEffect);
             if (id != null) {
                 if (!id.getNamespace().equals(Identifier.DEFAULT_NAMESPACE)) attributes.add(id.getNamespace());
                 String name = id.getPath();

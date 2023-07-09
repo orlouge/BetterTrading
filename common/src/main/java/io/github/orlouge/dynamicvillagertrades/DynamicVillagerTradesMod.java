@@ -3,20 +3,16 @@ package io.github.orlouge.dynamicvillagertrades;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-import com.mojang.brigadier.context.CommandContext;
 import com.mojang.serialization.JsonOps;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeGroup;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeOfferFactoryType;
 import net.minecraft.SharedConstants;
-import net.minecraft.resource.ResourceType;
+import net.minecraft.registry.Registries;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerProfession;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
 import java.util.*;
@@ -70,8 +66,8 @@ public class DynamicVillagerTradesMod {
         LiteralArgumentBuilder<ServerCommandSource> baseCommand = CommandManager.literal(MOD_ID).requires(source -> source.hasPermissionLevel(2));
         baseCommand.then(CommandManager.literal("export").executes(context -> {
             exportDatapack(
-                    err -> context.getSource().sendFeedback(Text.literal(err.getMessage()), false),
-                    path -> context.getSource().sendFeedback(Text.literal("Exported to " + path), false)
+                    err -> context.getSource().sendFeedback(() -> Text.literal(err.getMessage()), false),
+                    path -> context.getSource().sendFeedback(() -> Text.literal("Exported to " + path), false)
             );
             return 1;
         }));
@@ -84,12 +80,12 @@ public class DynamicVillagerTradesMod {
         List<Exception> exceptions = new LinkedList<>();
         try {
             ZipOutputStream zip = new ZipOutputStream(new FileOutputStream(zipFile));
-            int packVersion = ResourceType.SERVER_DATA.getPackVersion(SharedConstants.getGameVersion());
+            int packVersion = SharedConstants.DATA_PACK_VERSION;
             zip.putNextEntry(new ZipEntry("pack.mcmeta"));
             byte[] metadata_json = ("{\"pack\":{\"description\":\"Generated datapack\",\"pack_format\":" + packVersion + "}}").getBytes();
             zip.write(metadata_json, 0, metadata_json.length);
             zip.closeEntry();
-            Registry.VILLAGER_PROFESSION.getEntrySet().forEach(professionEntry -> {
+            Registries.VILLAGER_PROFESSION.getEntrySet().forEach(professionEntry -> {
                 Identifier professionId = professionEntry.getKey().getValue();
                 VillagerProfession profession = professionEntry.getValue();
                 Optional<Map<String, TradeGroup>> tradeGroups = TRADE_OFFER_MANAGER.getVillagerOffers(profession);

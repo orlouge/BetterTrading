@@ -4,6 +4,7 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.DyeItem;
 import net.minecraft.item.Item;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerProfession;
 
@@ -37,7 +38,7 @@ public class ShepherdGenerator extends OneByOneVanillaLikeGenerator {
             if (block instanceof BedBlock) return Optional.of("bed");
             if (block instanceof AbstractBannerBlock) return Optional.of("banner");
             if (block instanceof CarpetBlock) return Optional.of("carpet");
-            if (block.getDefaultState().getMaterial() == Material.WOOL) return Optional.of("wool");
+            if (block.getDefaultState().getSoundGroup() == BlockSoundGroup.WOOL) return Optional.of("wool");
         }
         return Optional.empty();
     }

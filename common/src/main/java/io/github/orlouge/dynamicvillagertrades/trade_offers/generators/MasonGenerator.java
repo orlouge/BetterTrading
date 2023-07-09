@@ -1,8 +1,8 @@
 package io.github.orlouge.dynamicvillagertrades.trade_offers.generators;
 
-import net.minecraft.block.Material;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.*;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registries;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerProfession;
 
@@ -21,8 +21,8 @@ public class MasonGenerator extends OneByOneVanillaLikeGenerator {
         Optional<Item> item = AttributeUtils.getTradeItem(trade);
         Map<String, Double> attributes = new HashMap<>();
 
-        item.flatMap(AttributeUtils::getBlockMaterial)
-                .flatMap(m -> m == Material.STONE ? item.flatMap(AttributeUtils::getColorAttributes) : Optional.empty())
+        item.flatMap(AttributeUtils::getBlockInstrument)
+                .flatMap(m -> m == Instrument.BASEDRUM ? item.flatMap(AttributeUtils::getColorAttributes) : Optional.empty())
                 .map(colors -> {attributes.put("stone", 1.0); attributes.putAll(colors); return true;})
                 .map(x -> item.map(MasonGenerator::stoneModifier).map(s -> {attributes.put("raw", s.equals("raw") ? 1.0 : -1.0); return true;}).isPresent())
                 .or(() -> {attributes.put("stone", -1.0); return Optional.of(true);});
@@ -34,7 +34,7 @@ public class MasonGenerator extends OneByOneVanillaLikeGenerator {
     }
 
     private static String stoneModifier(Item item) {
-        String s[] = Registry.ITEM.getId(item).getPath().split("_");
+        String s[] = Registries.ITEM.getId(item).getPath().split("_");
         for (int i = 0; i < s.length; i++) {
             if (s[i].equals("polished")) return "polished";
             if (s[i].equals("chiseled")) return "chiseled";

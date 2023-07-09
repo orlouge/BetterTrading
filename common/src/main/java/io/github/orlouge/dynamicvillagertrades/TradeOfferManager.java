@@ -12,12 +12,12 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 
 import io.github.orlouge.dynamicvillagertrades.trade_offers.generators.Generator;
 import net.minecraft.entity.EntityType;
+import net.minecraft.registry.Registries;
 import net.minecraft.resource.JsonDataLoader;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.profiler.Profiler;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.village.VillagerProfession;
 
 import java.util.*;
@@ -25,7 +25,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class TradeOfferManager extends JsonDataLoader {
     public static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    public static final Identifier WANDERING_TRADER_PROFESSION_ID = Registry.ENTITY_TYPE.getId(EntityType.WANDERING_TRADER);
+    public static final Identifier WANDERING_TRADER_PROFESSION_ID = Registries.ENTITY_TYPE.getId(EntityType.WANDERING_TRADER);
     public static final Identifier ID = DynamicVillagerTradesMod.id("trade_offers");
 
     private Map<Identifier, Map<String, TradeGroup>> tradeGroups = Map.of();
@@ -45,7 +45,7 @@ public class TradeOfferManager extends JsonDataLoader {
             if (jsonElement != null) {
                 VillagerTrades trades = VillagerTrades.CODEC.decode(JsonOps.INSTANCE, jsonElement).getOrThrow(false, s -> {
                 }/* DynamicVillagerTradesMod.LOGGER.error("Failed to read file {}: {}", identifier.toString(), s) */).getFirst();
-                builderMap.computeIfAbsent(trades.profession, p -> generateTradeGroups(Registry.VILLAGER_PROFESSION.get(p)).orElse(new TreeMap<>()));
+                builderMap.computeIfAbsent(trades.profession, p -> generateTradeGroups(Registries.VILLAGER_PROFESSION.get(p)).orElse(new TreeMap<>()));
                 if (trades.replace) {
                     builderMap.put(trades.profession, new TreeMap<>());
                 }
@@ -64,7 +64,7 @@ public class TradeOfferManager extends JsonDataLoader {
     }
 
     public Optional<Map<String, TradeGroup>> getVillagerOffers(VillagerProfession profession) {
-        return Optional.ofNullable(tradeGroups.get(Registry.VILLAGER_PROFESSION.getId(profession))).or(() -> generateTradeGroups(profession));
+        return Optional.ofNullable(tradeGroups.get(Registries.VILLAGER_PROFESSION.getId(profession))).or(() -> generateTradeGroups(profession));
     }
 
     private Optional<Map<String, TradeGroup>> generateTradeGroups(VillagerProfession profession) {
@@ -99,7 +99,7 @@ public class TradeOfferManager extends JsonDataLoader {
                 }
             }
 
-            return DataResult.error("Invalid level index " + id + " provided.");
+            return DataResult.error(() -> "Invalid level index " + id + " provided.");
         }
 
         @Override
