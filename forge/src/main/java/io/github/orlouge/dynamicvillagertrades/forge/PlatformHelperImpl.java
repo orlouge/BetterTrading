@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegisterEvent;
 import org.apache.logging.log4j.Level;
@@ -25,6 +26,10 @@ public class PlatformHelperImpl {
 
     public static Path getConfigDirectory() {
         return FMLPaths.CONFIGDIR.get();
+    }
+
+    public static boolean isModLoaded(String id) {
+        return ModList.get().isLoaded(id);
     }
 
     public static PlatformHelper.RegistryHelper<TradeOfferFactoryType<?>> getTradeOfferRegistry() {

@@ -24,6 +24,11 @@ public class PlatformHelper {
         throw new AssertionError();
     }
 
+    @ExpectPlatform
+    public static boolean isModLoaded(String id) {
+        throw new AssertionError();
+    }
+
     public interface RegistryHelper<T> {
         Supplier<Codec<T>> getCodec();
 
