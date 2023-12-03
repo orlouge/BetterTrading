@@ -22,6 +22,10 @@ public class PlatformHelperImpl {
         return FabricLoader.getInstance().getConfigDir();
     }
 
+    public static boolean isModLoaded(String id) {
+        return FabricLoader.getInstance().isModLoaded(id);
+    }
+
     public static PlatformHelper.RegistryHelper<TradeOfferFactoryType<?>> getTradeOfferRegistry() {
         return tradeOfferFactory;
     }

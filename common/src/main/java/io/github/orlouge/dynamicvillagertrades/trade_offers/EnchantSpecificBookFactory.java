@@ -1,9 +1,11 @@
 package io.github.orlouge.dynamicvillagertrades.trade_offers;
 
+import io.github.orlouge.dynamicvillagertrades.DynamicVillagerTradesMod;
 import io.github.orlouge.dynamicvillagertrades.api.SerializableTradeOfferFactory;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.EnchantedBookItem;
@@ -47,6 +49,9 @@ public class EnchantSpecificBookFactory implements SerializableTradeOfferFactory
             throw new IllegalStateException("Enchantment " + this.type + " does not exist.");
         }
         ItemStack itemStack = EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(enchantment, this.level));
+        if (DynamicVillagerTradesMod.ENCHANT_REPAIR_COMPAT) {
+            EnchantedBookItem.addEnchantment(itemStack, new EnchantmentLevelEntry(Enchantments.VANISHING_CURSE, 1));
+        }
         int j = 2 + random.nextInt(5 + this.level * 10) + 3 * this.level;
         if (enchantment.isTreasure()) {
             j *= 2;

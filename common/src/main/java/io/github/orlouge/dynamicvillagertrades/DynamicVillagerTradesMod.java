@@ -27,6 +27,7 @@ import java.util.zip.ZipOutputStream;
 public class DynamicVillagerTradesMod {
     public static final String MOD_ID = "dynamicvillagertrades";
     public static boolean NO_BOOK_DUPLICATES = true;
+    public static boolean ENCHANT_REPAIR_COMPAT = PlatformHelper.isModLoaded("enchantrepair");
     public static double GLOBAL_RANDOMNESS = 1.0;
     public static int REFRESH_DELAY = 0;
 
@@ -40,6 +41,7 @@ public class DynamicVillagerTradesMod {
         defaultProps.setProperty("no_book_duplicates", Boolean.toString(NO_BOOK_DUPLICATES));
         defaultProps.setProperty("global_randomness", Double.toString(GLOBAL_RANDOMNESS));
         defaultProps.setProperty("refresh_delay", Integer.toString(REFRESH_DELAY));
+        defaultProps.setProperty("enchant_repair_compat", Boolean.toString(ENCHANT_REPAIR_COMPAT));
 
         File f = new File(CONFIG_FNAME);
         if (f.isFile() && f.canRead()) {
@@ -49,6 +51,7 @@ public class DynamicVillagerTradesMod {
                 NO_BOOK_DUPLICATES = Boolean.parseBoolean(props.getProperty("no_book_duplicates"));
                 GLOBAL_RANDOMNESS = Double.parseDouble(props.getProperty("global_randomness"));
                 REFRESH_DELAY = Integer.parseInt(props.getProperty("refresh_delay"));
+                ENCHANT_REPAIR_COMPAT = Boolean.parseBoolean(props.getProperty("enchant_repair_compat"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
