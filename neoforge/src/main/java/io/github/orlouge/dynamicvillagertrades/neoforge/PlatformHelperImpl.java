@@ -1,4 +1,4 @@
-package io.github.orlouge.dynamicvillagertrades.forge;
+package io.github.orlouge.dynamicvillagertrades.neoforge;
 
 import com.mojang.serialization.Codec;
 import io.github.orlouge.dynamicvillagertrades.PlatformHelper;
@@ -7,10 +7,10 @@ import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeOfferFactoryTyp
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
-import net.minecraftforge.fml.loading.FMLPaths;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.registries.IForgeRegistry;
-import net.minecraftforge.registries.RegisterEvent;
+import net.neoforged.fml.loading.FMLPaths;
+import net.neoforged.fml.ModList;
+import net.neoforged.registries.IForgeRegistry;
+import net.neoforged.registries.RegisterEvent;
 import org.apache.logging.log4j.Level;
 
 import java.util.LinkedHashMap;

@@ -24,7 +24,7 @@ public record TradeGroup(boolean replace, int minTrades, int maxTrades, double r
             Codec.DOUBLE.optionalFieldOf("randomness", 1.0).forGetter(TradeGroup::randomness),
             Codec.unboundedMap(Codec.STRING, Codec.DOUBLE).optionalFieldOf("affinity").forGetter(TradeGroup::affinity),
             ExtendedTradeOffer.Factory.CODEC.listOf().fieldOf("trades").forGetter(TradeGroup::offers),
-            Codecs.createLazy(() -> Codec.unboundedMap(Codec.STRING, TradeGroup.CODEC)).optionalFieldOf("subgroups").forGetter(TradeGroup::subGroups),
+            Codec.lazyInitialized(() -> Codec.unboundedMap(Codec.STRING, TradeGroup.CODEC)).optionalFieldOf("subgroups").forGetter(TradeGroup::subGroups),
             Codec.STRING.optionalFieldOf("unique_key_set").forGetter(TradeGroup::uniqueKeySet)
     ).apply(instance, TradeGroup::new));
 

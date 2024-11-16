@@ -7,7 +7,7 @@
   ],
   "mixins": [
     "TradeOffersAccessor",
-    "TradeOffersAccessor$BuyForOneEmeraldFactoryAccessor",
+    "TradeOffersAccessor$BuyItemFactoryAccessor",
     "TradeOffersAccessor$EnchantBookFactoryAccessor",
     "TradeOffersAccessor$ProcessItemFactoryAccessor",
     "TradeOffersAccessor$SellDyedArmorFactoryAccessor",

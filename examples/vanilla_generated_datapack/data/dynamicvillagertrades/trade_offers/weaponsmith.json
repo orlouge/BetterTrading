@@ -6,8 +6,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:coal",
-            "price": 15,
+            "item": {
+              "id": "minecraft:coal",
+              "count": 15
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -53,8 +56,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:iron_ingot",
-            "price": 4,
+            "item": {
+              "id": "minecraft:iron_ingot",
+              "count": 4
+            },
+            "price": 1,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -85,8 +91,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:flint",
-            "price": 24,
+            "item": {
+              "id": "minecraft:flint",
+              "count": 24
+            },
+            "price": 1,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -104,7 +113,10 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:diamond",
+            "item": {
+              "id": "minecraft:diamond",
+              "count": 1
+            },
             "price": 1,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"

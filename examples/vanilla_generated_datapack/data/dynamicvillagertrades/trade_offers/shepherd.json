@@ -6,69 +6,81 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:white_wool",
-            "price": 18,
+            "item": {
+              "id": "minecraft:white_wool",
+              "count": 18
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "novice",
           "attributes": {
+            "red": 0.0,
             "saturation": -0.9986928104575163,
-            "red": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 1.0013071895424837,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:brown_wool",
-            "price": 18,
+            "item": {
+              "id": "minecraft:brown_wool",
+              "count": 18
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "novice",
           "attributes": {
+            "red": 0.0,
             "saturation": -1.1981098982729093,
-            "red": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": -0.8018901017270906,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:black_wool",
-            "price": 18,
+            "item": {
+              "id": "minecraft:black_wool",
+              "count": 18
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "novice",
           "attributes": {
+            "red": 0.0,
             "saturation": -1.1088534107402033,
-            "red": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": -0.8911465892597968,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:gray_wool",
-            "price": 18,
+            "item": {
+              "id": "minecraft:gray_wool",
+              "count": 18
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "novice",
           "attributes": {
-            "saturation": -1.4253731343283582,
             "red": 0.0,
+            "saturation": -1.4253731343283582,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": -0.5746268656716419,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -94,91 +106,106 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:white_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:white_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "apprentice",
           "attributes": {
+            "red": 0.0,
             "saturation": -0.9986928104575163,
-            "red": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": 1.0013071895424837,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:gray_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:gray_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "apprentice",
           "attributes": {
+            "red": 0.0,
             "saturation": -1.4253731343283582,
-            "red": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": -0.5746268656716419,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:black_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:black_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "apprentice",
           "attributes": {
+            "red": 0.0,
             "saturation": -1.1088534107402033,
-            "red": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": -0.8911465892597968,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:light_blue_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:light_blue_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
+            "saturation": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:lime_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:lime_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.5418105297566755,
             "red": 0.5293072098392139,
+            "saturation": 0.5418105297566755,
             "dye": 1.0,
-            "green": 0.9288822604041105,
             "brightness": 0.0,
+            "green": 0.9288822604041105,
             "blue": 0.0
           }
         },
@@ -191,11 +218,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -0.9986928104575163,
             "red": 0.0,
+            "saturation": -0.9986928104575163,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 1.0013071895424837,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -208,11 +235,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.480929101421942,
             "red": 1.0400277936322804,
+            "saturation": 0.480929101421942,
             "wool": 1.0,
-            "green": 0.4790431049457776,
             "brightness": 0.0,
+            "green": 0.4790431049457776,
             "blue": 0.0
           }
         },
@@ -225,11 +252,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.8429752066115702,
+            "saturation": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.1570247933884297
           }
         },
@@ -242,11 +269,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
+            "saturation": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0
           }
         },
@@ -259,11 +286,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.37704536872240435,
             "red": 0.6554008154816358,
+            "saturation": 0.37704536872240435,
             "wool": 1.0,
-            "green": 0.6554008154816358,
             "brightness": 0.3121530003143241,
+            "green": 0.6554008154816358,
             "blue": 0.0
           }
         },
@@ -276,11 +303,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.5418105297566755,
             "red": 0.5293072098392139,
+            "saturation": 0.5418105297566755,
             "wool": 1.0,
-            "green": 0.9288822604041105,
             "brightness": 0.0,
+            "green": 0.9288822604041105,
             "blue": 0.0
           }
         },
@@ -293,11 +320,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.062522675051397,
+            "saturation": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 0.9374773249486033,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -310,11 +337,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -1.4253731343283582,
             "red": 0.0,
+            "saturation": -1.4253731343283582,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": -0.5746268656716419,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -327,11 +354,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -2.0,
             "red": 0.0,
+            "saturation": -2.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -344,11 +371,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -1.1318744729015935,
             "red": 0.0,
+            "saturation": -1.1318744729015935,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.8681255270984064
           }
         },
@@ -361,11 +388,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.7150837988826816,
+            "saturation": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.2849162011173185
           }
         },
@@ -378,11 +405,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
+            "saturation": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0
           }
         },
@@ -395,11 +422,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -1.1981098982729093,
             "red": 0.0,
+            "saturation": -1.1981098982729093,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": -0.8018901017270906,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -412,11 +439,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -0.8308761721202544,
             "red": 0.0,
+            "saturation": -0.8308761721202544,
             "wool": 1.0,
-            "green": 0.6166564254751785,
             "brightness": -0.5524674024045672,
+            "green": 0.6166564254751785,
             "blue": 0.0
           }
         },
@@ -429,11 +456,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.0922087205146533,
+            "saturation": 0.0,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": -0.9077912794853468,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -446,11 +473,11 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -1.1088534107402033,
             "red": 0.0,
+            "saturation": -1.1088534107402033,
             "wool": 1.0,
-            "green": 0.0,
             "brightness": -0.8911465892597968,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -464,10 +491,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -0.9986928104575163,
             "red": 0.0,
-            "green": 0.0,
+            "saturation": -0.9986928104575163,
             "brightness": 1.0013071895424837,
+            "green": 0.0,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -482,10 +509,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.480929101421942,
             "red": 1.0400277936322804,
-            "green": 0.4790431049457776,
+            "saturation": 0.480929101421942,
             "brightness": 0.0,
+            "green": 0.4790431049457776,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -500,10 +527,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.8429752066115702,
-            "green": 0.0,
+            "saturation": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.1570247933884297,
             "carpet": 1.0
           }
@@ -518,10 +545,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
-            "green": 0.0,
+            "saturation": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0,
             "carpet": 1.0
           }
@@ -536,10 +563,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.37704536872240435,
             "red": 0.6554008154816358,
-            "green": 0.6554008154816358,
+            "saturation": 0.37704536872240435,
             "brightness": 0.3121530003143241,
+            "green": 0.6554008154816358,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -554,10 +581,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.5418105297566755,
             "red": 0.5293072098392139,
-            "green": 0.9288822604041105,
+            "saturation": 0.5418105297566755,
             "brightness": 0.0,
+            "green": 0.9288822604041105,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -572,10 +599,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.062522675051397,
-            "green": 0.0,
+            "saturation": 0.0,
             "brightness": 0.9374773249486033,
+            "green": 0.0,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -590,10 +617,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -1.4253731343283582,
             "red": 0.0,
-            "green": 0.0,
+            "saturation": -1.4253731343283582,
             "brightness": -0.5746268656716419,
+            "green": 0.0,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -608,10 +635,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -2.0,
             "red": 0.0,
-            "green": 0.0,
+            "saturation": -2.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -626,10 +653,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -1.1318744729015935,
             "red": 0.0,
-            "green": 0.0,
+            "saturation": -1.1318744729015935,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.8681255270984064,
             "carpet": 1.0
           }
@@ -644,10 +671,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.7150837988826816,
-            "green": 0.0,
+            "saturation": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.2849162011173185,
             "carpet": 1.0
           }
@@ -662,10 +689,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
-            "green": 0.0,
+            "saturation": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0,
             "carpet": 1.0
           }
@@ -680,10 +707,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -1.1981098982729093,
             "red": 0.0,
-            "green": 0.0,
+            "saturation": -1.1981098982729093,
             "brightness": -0.8018901017270906,
+            "green": 0.0,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -698,10 +725,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -0.8308761721202544,
             "red": 0.0,
-            "green": 0.6166564254751785,
+            "saturation": -0.8308761721202544,
             "brightness": -0.5524674024045672,
+            "green": 0.6166564254751785,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -716,10 +743,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.0922087205146533,
-            "green": 0.0,
+            "saturation": 0.0,
             "brightness": -0.9077912794853468,
+            "green": 0.0,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -734,10 +761,10 @@
           },
           "level": "apprentice",
           "attributes": {
-            "saturation": -1.1088534107402033,
             "red": 0.0,
-            "green": 0.0,
+            "saturation": -1.1088534107402033,
             "brightness": -0.8911465892597968,
+            "green": 0.0,
             "blue": 0.0,
             "carpet": 1.0
           }
@@ -751,91 +778,106 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:yellow_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:yellow_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.37704536872240435,
             "red": 0.6554008154816358,
+            "saturation": 0.37704536872240435,
             "dye": 1.0,
-            "green": 0.6554008154816358,
             "brightness": 0.3121530003143241,
+            "green": 0.6554008154816358,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:light_gray_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:light_gray_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": -2.0,
             "red": 0.0,
+            "saturation": -2.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:orange_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:orange_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.480929101421942,
             "red": 1.0400277936322804,
+            "saturation": 0.480929101421942,
             "dye": 1.0,
-            "green": 0.4790431049457776,
             "brightness": 0.0,
+            "green": 0.4790431049457776,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:red_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:red_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.0922087205146533,
+            "saturation": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": -0.9077912794853468,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:pink_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:pink_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.062522675051397,
+            "saturation": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": 0.9374773249486033,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -848,11 +890,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": -0.9986928104575163,
             "red": 0.0,
+            "saturation": -0.9986928104575163,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": 1.0013071895424837,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -865,11 +907,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.37704536872240435,
             "red": 0.6554008154816358,
+            "saturation": 0.37704536872240435,
             "bed": 1.0,
-            "green": 0.6554008154816358,
             "brightness": 0.3121530003143241,
+            "green": 0.6554008154816358,
             "blue": 0.0
           }
         },
@@ -882,11 +924,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.0922087205146533,
+            "saturation": 0.0,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": -0.9077912794853468,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -899,11 +941,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": -1.1088534107402033,
             "red": 0.0,
+            "saturation": -1.1088534107402033,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": -0.8911465892597968,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -916,11 +958,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
+            "saturation": 0.0,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0
           }
         },
@@ -933,11 +975,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": -1.1981098982729093,
             "red": 0.0,
+            "saturation": -1.1981098982729093,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": -0.8018901017270906,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -950,11 +992,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": -1.1318744729015935,
             "red": 0.0,
+            "saturation": -1.1318744729015935,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.8681255270984064
           }
         },
@@ -967,11 +1009,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": -1.4253731343283582,
             "red": 0.0,
+            "saturation": -1.4253731343283582,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": -0.5746268656716419,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -984,11 +1026,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": -0.8308761721202544,
             "red": 0.0,
+            "saturation": -0.8308761721202544,
             "bed": 1.0,
-            "green": 0.6166564254751785,
             "brightness": -0.5524674024045672,
+            "green": 0.6166564254751785,
             "blue": 0.0
           }
         },
@@ -1001,11 +1043,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
+            "saturation": 0.0,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0
           }
         },
@@ -1018,11 +1060,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": -2.0,
             "red": 0.0,
+            "saturation": -2.0,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -1035,11 +1077,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.5418105297566755,
             "red": 0.5293072098392139,
+            "saturation": 0.5418105297566755,
             "bed": 1.0,
-            "green": 0.9288822604041105,
             "brightness": 0.0,
+            "green": 0.9288822604041105,
             "blue": 0.0
           }
         },
@@ -1052,11 +1094,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.8429752066115702,
+            "saturation": 0.0,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.1570247933884297
           }
         },
@@ -1069,11 +1111,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.480929101421942,
             "red": 1.0400277936322804,
+            "saturation": 0.480929101421942,
             "bed": 1.0,
-            "green": 0.4790431049457776,
             "brightness": 0.0,
+            "green": 0.4790431049457776,
             "blue": 0.0
           }
         },
@@ -1086,11 +1128,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.062522675051397,
+            "saturation": 0.0,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": 0.9374773249486033,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -1103,11 +1145,11 @@
           },
           "level": "journeyman",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.7150837988826816,
+            "saturation": 0.0,
             "bed": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.2849162011173185
           }
         }
@@ -1120,109 +1162,127 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:brown_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:brown_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "expert",
           "attributes": {
-            "saturation": -1.1981098982729093,
             "red": 0.0,
+            "saturation": -1.1981098982729093,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": -0.8018901017270906,
+            "green": 0.0,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:purple_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:purple_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.7150837988826816,
+            "saturation": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.2849162011173185
           }
         },
         {
           "offer": {
-            "item": "minecraft:blue_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:blue_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
+            "saturation": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:green_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:green_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "expert",
           "attributes": {
-            "saturation": -0.8308761721202544,
             "red": 0.0,
+            "saturation": -0.8308761721202544,
             "dye": 1.0,
-            "green": 0.6166564254751785,
             "brightness": -0.5524674024045672,
+            "green": 0.6166564254751785,
             "blue": 0.0
           }
         },
         {
           "offer": {
-            "item": "minecraft:magenta_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:magenta_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.8429752066115702,
+            "saturation": 0.0,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.1570247933884297
           }
         },
         {
           "offer": {
-            "item": "minecraft:cyan_dye",
-            "price": 12,
+            "item": {
+              "id": "minecraft:cyan_dye",
+              "count": 12
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "expert",
           "attributes": {
-            "saturation": -1.1318744729015935,
             "red": 0.0,
+            "saturation": -1.1318744729015935,
             "dye": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.8681255270984064
           }
         },
@@ -1235,11 +1295,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": -0.9986928104575163,
             "red": 0.0,
+            "saturation": -0.9986928104575163,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": 1.0013071895424837,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -1252,11 +1312,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
+            "saturation": 0.0,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0
           }
         },
@@ -1269,11 +1329,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.0,
+            "saturation": 0.0,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 2.0
           }
         },
@@ -1286,11 +1346,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.0922087205146533,
+            "saturation": 0.0,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": -0.9077912794853468,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -1303,11 +1363,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 1.062522675051397,
+            "saturation": 0.0,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": 0.9374773249486033,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -1320,11 +1380,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": -0.8308761721202544,
             "red": 0.0,
+            "saturation": -0.8308761721202544,
             "banner": 1.0,
-            "green": 0.6166564254751785,
             "brightness": -0.5524674024045672,
+            "green": 0.6166564254751785,
             "blue": 0.0
           }
         },
@@ -1337,11 +1397,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.5418105297566755,
             "red": 0.5293072098392139,
+            "saturation": 0.5418105297566755,
             "banner": 1.0,
-            "green": 0.9288822604041105,
             "brightness": 0.0,
+            "green": 0.9288822604041105,
             "blue": 0.0
           }
         },
@@ -1354,11 +1414,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": -1.4253731343283582,
             "red": 0.0,
+            "saturation": -1.4253731343283582,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": -0.5746268656716419,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -1371,11 +1431,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": -1.1088534107402033,
             "red": 0.0,
+            "saturation": -1.1088534107402033,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": -0.8911465892597968,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -1388,11 +1448,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.7150837988826816,
+            "saturation": 0.0,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.2849162011173185
           }
         },
@@ -1405,11 +1465,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.0,
             "red": 0.8429752066115702,
+            "saturation": 0.0,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 1.1570247933884297
           }
         },
@@ -1422,11 +1482,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": -1.1318744729015935,
             "red": 0.0,
+            "saturation": -1.1318744729015935,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.8681255270984064
           }
         },
@@ -1439,11 +1499,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": -1.1981098982729093,
             "red": 0.0,
+            "saturation": -1.1981098982729093,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": -0.8018901017270906,
+            "green": 0.0,
             "blue": 0.0
           }
         },
@@ -1456,11 +1516,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.37704536872240435,
             "red": 0.6554008154816358,
+            "saturation": 0.37704536872240435,
             "banner": 1.0,
-            "green": 0.6554008154816358,
             "brightness": 0.3121530003143241,
+            "green": 0.6554008154816358,
             "blue": 0.0
           }
         },
@@ -1473,11 +1533,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": 0.480929101421942,
             "red": 1.0400277936322804,
+            "saturation": 0.480929101421942,
             "banner": 1.0,
-            "green": 0.4790431049457776,
             "brightness": 0.0,
+            "green": 0.4790431049457776,
             "blue": 0.0
           }
         },
@@ -1490,11 +1550,11 @@
           },
           "level": "expert",
           "attributes": {
-            "saturation": -2.0,
             "red": 0.0,
+            "saturation": -2.0,
             "banner": 1.0,
-            "green": 0.0,
             "brightness": 0.0,
+            "green": 0.0,
             "blue": 0.0
           }
         }

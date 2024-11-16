@@ -2,6 +2,7 @@ package io.github.orlouge.dynamicvillagertrades.trade_offers.generators;
 
 import io.github.orlouge.dynamicvillagertrades.trade_offers.ExtendedTradeOffer;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeGroup;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.village.TradeOffers;
 
 import java.util.*;
@@ -13,7 +14,7 @@ public class OneByOneVanillaLikeGenerator extends VanillaLikeGenerator {
     }
 
     @Override
-    protected TradeGroup tradeGroupAtLevel(Integer level, String levelName, TradeOffers.Factory[] trades) {
+    protected TradeGroup tradeGroupAtLevel(Integer level, String levelName, TradeOffers.Factory[] trades, DynamicRegistryManager registryManager) {
         List<ExtendedTradeOffer.Factory> offers = new ArrayList<>(trades.length);
         for (int i = 0; i < trades.length; i++) {
             Map<String, Double> attributes = Map.of();

@@ -6,8 +6,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:wheat",
-            "price": 20,
+            "item": {
+              "id": "minecraft:wheat",
+              "count": 20
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -18,8 +21,11 @@
         },
         {
           "offer": {
-            "item": "minecraft:potato",
-            "price": 26,
+            "item": {
+              "id": "minecraft:potato",
+              "count": 26
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -30,8 +36,11 @@
         },
         {
           "offer": {
-            "item": "minecraft:carrot",
-            "price": 22,
+            "item": {
+              "id": "minecraft:carrot",
+              "count": 22
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -42,8 +51,11 @@
         },
         {
           "offer": {
-            "item": "minecraft:beetroot",
-            "price": 15,
+            "item": {
+              "id": "minecraft:beetroot",
+              "count": 15
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -74,8 +86,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:pumpkin",
-            "price": 6,
+            "item": {
+              "id": "minecraft:pumpkin",
+              "count": 6
+            },
+            "price": 1,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -129,8 +144,11 @@
         },
         {
           "offer": {
-            "item": "minecraft:melon",
-            "price": 4,
+            "item": {
+              "id": "minecraft:melon",
+              "count": 4
+            },
+            "price": 1,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -157,8 +175,12 @@
         },
         {
           "offer": {
-            "effect": "minecraft:night_vision",
-            "duration": 100,
+            "effects": [
+              {
+                "id": "minecraft:night_vision",
+                "duration": 100
+              }
+            ],
             "experience": 15,
             "type": "minecraft:sell_suspicious_stew"
           },
@@ -169,8 +191,11 @@
         },
         {
           "offer": {
-            "effect": "minecraft:jump_boost",
-            "duration": 160,
+            "effects": [
+              {
+                "id": "minecraft:jump_boost"
+              }
+            ],
             "experience": 15,
             "type": "minecraft:sell_suspicious_stew"
           },
@@ -181,8 +206,12 @@
         },
         {
           "offer": {
-            "effect": "minecraft:weakness",
-            "duration": 140,
+            "effects": [
+              {
+                "id": "minecraft:weakness",
+                "duration": 140
+              }
+            ],
             "experience": 15,
             "type": "minecraft:sell_suspicious_stew"
           },
@@ -193,8 +222,12 @@
         },
         {
           "offer": {
-            "effect": "minecraft:blindness",
-            "duration": 120,
+            "effects": [
+              {
+                "id": "minecraft:blindness",
+                "duration": 120
+              }
+            ],
             "experience": 15,
             "type": "minecraft:sell_suspicious_stew"
           },
@@ -205,8 +238,12 @@
         },
         {
           "offer": {
-            "effect": "minecraft:poison",
-            "duration": 280,
+            "effects": [
+              {
+                "id": "minecraft:poison",
+                "duration": 280
+              }
+            ],
             "experience": 15,
             "type": "minecraft:sell_suspicious_stew"
           },
@@ -217,8 +254,12 @@
         },
         {
           "offer": {
-            "effect": "minecraft:saturation",
-            "duration": 7,
+            "effects": [
+              {
+                "id": "minecraft:saturation",
+                "duration": 7
+              }
+            ],
             "experience": 15,
             "type": "minecraft:sell_suspicious_stew"
           },

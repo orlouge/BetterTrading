@@ -1,18 +1,17 @@
 package io.github.orlouge.dynamicvillagertrades.forge;
 
 import io.github.orlouge.dynamicvillagertrades.DynamicVillagerTradesMod;
+import io.github.orlouge.dynamicvillagertrades.TradeOfferManager;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeOfferFactoryType;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.util.Identifier;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.AddReloadListenerEvent;
-import net.minecraftforge.event.RegisterCommandsEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.IForgeRegistry;
-import net.minecraftforge.registries.NewRegistryEvent;
-import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.RegistryBuilder;
+import net.neoforged.common.MinecraftForge;
+import net.neoforged.event.AddReloadListenerEvent;
+import net.neoforged.event.RegisterCommandsEvent;
+import net.neoforged.eventbus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -38,7 +37,9 @@ public class DynamicVillagerTradesModForge {
         DynamicVillagerTradesMod.registerCommands(event.getDispatcher());
     }
 
-    private void reloadListenerEventHandler(AddReloadListenerEvent event) {
+    private void reloadListenerEventHandler(net.neoforged.neoforge.event.AddReloadListenerEvent event) {
+        DynamicRegistryManager registry = event.getRegistryAccess();
+        TradeOfferManager.REGISTRY_ACCESS = () -> registry;
         event.addListener(DynamicVillagerTradesMod.TRADE_OFFER_MANAGER);
     }
 

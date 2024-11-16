@@ -1,6 +1,7 @@
 package io.github.orlouge.dynamicvillagertrades.trade_offers;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import io.github.orlouge.dynamicvillagertrades.api.CodecHelper;
 import io.github.orlouge.dynamicvillagertrades.api.SerializableTradeOfferFactory;
 import org.jetbrains.annotations.Nullable;
@@ -16,7 +17,7 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public record TypeAwareTradeOfferFactory(Map<VillagerType, TradeOffers.Factory> tradeOffers) implements SerializableTradeOfferFactory {
-    public static final Codec<TypeAwareTradeOfferFactory> CODEC = CodecHelper.villagerTypeMap(TradeOfferFactoryType.CODEC).fieldOf("trades").xmap(TypeAwareTradeOfferFactory::new, TypeAwareTradeOfferFactory::tradeOffers).codec();
+    public static final MapCodec<TypeAwareTradeOfferFactory> CODEC = CodecHelper.villagerTypeMap(TradeOfferFactoryType.CODEC).fieldOf("trades").xmap(TypeAwareTradeOfferFactory::new, TypeAwareTradeOfferFactory::tradeOffers);
 
     @Override
     public Supplier<TradeOfferFactoryType<?>> getType() {

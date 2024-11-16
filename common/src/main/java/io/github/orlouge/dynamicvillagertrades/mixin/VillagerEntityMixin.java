@@ -9,6 +9,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtList;
+import net.minecraft.nbt.NbtOps;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradeOfferList;
 import net.minecraft.village.VillagerData;
@@ -100,7 +101,7 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
         TradeOfferList tradeOffers = new TradeOfferList();
 
         for (int i = 0; i < recipes.size(); ++i) {
-            tradeOffers.add(new ExtendedTradeOffer(recipes.getCompound(i)));
+            tradeOffers.add(ExtendedTradeOffer.CODEC.parse(this.getRegistryManager().getOps(NbtOps.INSTANCE), recipes.getCompound(i)).getOrThrow());
         }
 
         this.offers = tradeOffers;
@@ -142,7 +143,7 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
     }
 
     private boolean refreshOffers() {
-        Optional<Collection<TradeGroup>> optoffers = DynamicVillagerTradesMod.TRADE_OFFER_MANAGER.getVillagerOffers(this.getVillagerData().getProfession()).map(Map::values);
+        Optional<Collection<TradeGroup>> optoffers = DynamicVillagerTradesMod.TRADE_OFFER_MANAGER.getVillagerOffers(this.getVillagerData().getProfession(), this.getRegistryManager()).map(Map::values);
         optoffers.ifPresent(offerGroups -> {
             TradeOfferList offerList = this.getOffers();
             offerList.clear();
@@ -158,7 +159,7 @@ public abstract class VillagerEntityMixin extends MerchantEntity implements Exte
                 ));
                 if (generatedOffer != null) {
                     offerList.add(generatedOffer);
-                    tradeFactory.key().ifPresent(key -> generatedOffer.extraNbt().ifPresent(
+                    tradeFactory.key().ifPresent(key -> generatedOffer.extraNbt(this.getRegistryManager()).ifPresent(
                             data -> new_data.put(key, data))
                     );
                 }

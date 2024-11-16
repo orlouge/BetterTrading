@@ -1,27 +1,33 @@
 package io.github.orlouge.dynamicvillagertrades.mixin;
 
+import net.minecraft.component.type.SuspiciousStewEffectsComponent;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.provider.EnchantmentProvider;
+import net.minecraft.item.map.MapDecorationType;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.village.TradedItem;
 import net.minecraft.world.gen.structure.Structure;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.map.MapIcon;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerType;
 
 import java.util.Map;
+import java.util.Optional;
 
 @Mixin(TradeOffers.class)
 public interface TradeOffersAccessor {
 
-    @Mixin(TradeOffers.BuyForOneEmeraldFactory.class)
-    interface BuyForOneEmeraldFactoryAccessor {
+    @Mixin(TradeOffers.BuyItemFactory.class)
+    interface BuyItemFactoryAccessor {
 
         @Accessor
-        Item getBuy();
+        TradedItem getStack();
 
         @Accessor
         int getPrice();
@@ -43,9 +49,6 @@ public interface TradeOffersAccessor {
         int getPrice();
 
         @Accessor
-        int getCount();
-
-        @Accessor
         int getMaxUses();
 
         @Accessor
@@ -56,38 +59,38 @@ public interface TradeOffersAccessor {
     interface SellSuspiciousStewFactoryAccessor {
 
         @Accessor
-        StatusEffect getEffect();
-
-        @Accessor
-        int getDuration();
+        SuspiciousStewEffectsComponent getStewEffects();
 
         @Accessor
         int getExperience();
+
+        @Accessor
+        float getMultiplier();
     }
 
     @Mixin(TradeOffers.ProcessItemFactory.class)
     interface ProcessItemFactoryAccessor {
 
         @Accessor
-        ItemStack getSecondBuy();
-
-        @Accessor
-        int getSecondCount();
+        TradedItem getToBeProcessed();
 
         @Accessor
         int getPrice();
 
         @Accessor
-        ItemStack getSell();
-
-        @Accessor
-        int getSellCount();
+        ItemStack getProcessed();
 
         @Accessor
         int getMaxUses();
 
         @Accessor
         int getExperience();
+
+        @Accessor
+        Optional<RegistryKey<EnchantmentProvider>> getEnchantmentProviderKey();
+
+        @Accessor
+        float getMultiplier();
     }
 
     @Mixin(TradeOffers.SellEnchantedToolFactory.class)
@@ -155,6 +158,15 @@ public interface TradeOffersAccessor {
 
         @Accessor
         int getExperience();
+
+        @Accessor
+        int getMinLevel();
+
+        @Accessor
+        int getMaxLevel();
+
+        @Accessor
+        TagKey<Enchantment> getPossibleEnchantments();
     }
 
     @Mixin(TradeOffers.SellMapFactory.class)
@@ -170,7 +182,7 @@ public interface TradeOffersAccessor {
         String getNameKey();
 
         @Accessor
-        MapIcon.Type getIconType();
+        RegistryEntry<MapDecorationType> getDecoration();
 
         @Accessor
         int getMaxUses();

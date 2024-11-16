@@ -6,8 +6,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:string",
-            "price": 20,
+            "item": {
+              "id": "minecraft:string",
+              "count": 20
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -18,8 +21,11 @@
         },
         {
           "offer": {
-            "item": "minecraft:coal",
-            "price": 10,
+            "item": {
+              "id": "minecraft:coal",
+              "count": 10
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -30,12 +36,14 @@
         },
         {
           "offer": {
-            "sell_item": "minecraft:cooked_cod",
-            "sell_count": 6,
             "max_uses": 16,
             "experience": 1,
-            "item": "minecraft:cod",
-            "second_count": 6,
+            "item": {
+              "id": "minecraft:cod",
+              "count": 6
+            },
+            "sell_item": "minecraft:cooked_cod",
+            "sell_count": 6,
             "type": "minecraft:process_item"
           },
           "level": "novice",
@@ -65,8 +73,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:cod",
-            "price": 15,
+            "item": {
+              "id": "minecraft:cod",
+              "count": 15
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
@@ -78,12 +89,14 @@
         },
         {
           "offer": {
-            "sell_item": "minecraft:cooked_salmon",
-            "sell_count": 6,
             "max_uses": 16,
             "experience": 5,
-            "item": "minecraft:salmon",
-            "second_count": 6,
+            "item": {
+              "id": "minecraft:salmon",
+              "count": 6
+            },
+            "sell_item": "minecraft:cooked_salmon",
+            "sell_count": 6,
             "type": "minecraft:process_item"
           },
           "level": "apprentice",
@@ -112,8 +125,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:salmon",
-            "price": 13,
+            "item": {
+              "id": "minecraft:salmon",
+              "count": 13
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
@@ -142,8 +158,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:tropical_fish",
-            "price": 6,
+            "item": {
+              "id": "minecraft:tropical_fish",
+              "count": 6
+            },
+            "price": 1,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -159,8 +178,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:pufferfish",
-            "price": 4,
+            "item": {
+              "id": "minecraft:pufferfish",
+              "count": 4
+            },
+            "price": 1,
             "experience": 30,
             "type": "minecraft:buy_for_one_emerald"
           },

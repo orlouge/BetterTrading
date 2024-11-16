@@ -6,8 +6,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:paper",
-            "price": 24,
+            "item": {
+              "id": "minecraft:paper",
+              "count": 24
+            },
+            "price": 1,
             "max_uses": 16,
             "type": "minecraft:buy_for_one_emerald"
           },
@@ -33,8 +36,11 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:glass_pane",
-            "price": 11,
+            "item": {
+              "id": "minecraft:glass_pane",
+              "count": 11
+            },
+            "price": 1,
             "max_uses": 16,
             "experience": 10,
             "type": "minecraft:buy_for_one_emerald"
@@ -46,7 +52,7 @@
           "key": "apprentice_worldgen/structure",
           "cache": true,
           "offer": {
-            "icon": "MONUMENT",
+            "decoration": "minecraft:monument",
             "experience": 5,
             "price": 13,
             "feature_tag": "minecraft:on_ocean_explorer_maps",
@@ -65,19 +71,24 @@
       "trades": [
         {
           "offer": {
-            "item": "minecraft:compass",
+            "item": {
+              "id": "minecraft:compass",
+              "count": 1
+            },
             "price": 1,
             "experience": 20,
             "type": "minecraft:buy_for_one_emerald"
           },
           "level": "journeyman",
-          "attributes": {}
+          "attributes": {
+            "compass": 1.0
+          }
         },
         {
           "key": "journeyman_worldgen/structure",
           "cache": true,
           "offer": {
-            "icon": "MANSION",
+            "decoration": "minecraft:mansion",
             "experience": 10,
             "price": 14,
             "feature_tag": "minecraft:on_woodland_explorer_maps",
@@ -85,7 +96,25 @@
             "type": "minecraft:sell_map"
           },
           "level": "journeyman",
-          "attributes": {}
+          "attributes": {
+            "worldgen/structure": 1.0
+          }
+        },
+        {
+          "key": "journeyman_worldgen/structure",
+          "cache": true,
+          "offer": {
+            "decoration": "minecraft:trial_chambers",
+            "experience": 10,
+            "price": 12,
+            "feature_tag": "minecraft:on_trial_chambers_maps",
+            "name_key": "filled_map.trial_chambers",
+            "type": "minecraft:sell_map"
+          },
+          "level": "journeyman",
+          "attributes": {
+            "worldgen/structure": 1.0
+          }
         }
       ],
       "replace": false,

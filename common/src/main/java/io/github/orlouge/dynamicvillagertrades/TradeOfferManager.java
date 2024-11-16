@@ -1,6 +1,5 @@
 package io.github.orlouge.dynamicvillagertrades;
 
-import io.github.orlouge.dynamicvillagertrades.mixin.TradeOffersAccessor;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -12,6 +11,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 
 import io.github.orlouge.dynamicvillagertrades.trade_offers.generators.Generator;
 import net.minecraft.entity.EntityType;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.resource.JsonDataLoader;
 import net.minecraft.resource.ResourceManager;
@@ -22,13 +22,15 @@ import net.minecraft.village.VillagerProfession;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Supplier;
 
 public class TradeOfferManager extends JsonDataLoader {
     public static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     public static final Identifier WANDERING_TRADER_PROFESSION_ID = Registries.ENTITY_TYPE.getId(EntityType.WANDERING_TRADER);
     public static final Identifier ID = DynamicVillagerTradesMod.id("trade_offers");
 
-    private Map<Identifier, Map<String, TradeGroup>> tradeGroups = Map.of();
+    private Map<Identifier, List<VillagerTrades>> loadedTrades = Map.of();
+    private final Map<Identifier, Map<String, TradeGroup>> tradeGroups = new HashMap<>();
 
     public TradeOfferManager() {
         super(GSON, ID.getPath());
@@ -36,39 +38,40 @@ public class TradeOfferManager extends JsonDataLoader {
 
     @Override
     protected void apply(Map<Identifier, JsonElement> prepared, ResourceManager manager, Profiler profiler) {
-        Map<Identifier, Map<String, TradeGroup>> builderMap = new HashMap<>();
+        Map<Identifier, List<VillagerTrades>> builderMap = new HashMap<>();
 
-        AtomicInteger loadedCount = new AtomicInteger();
         manager.findResources(ID.getPath(), id -> id.getPath().endsWith(".json")).forEach((id, res) -> {
-            Identifier identifier = new Identifier(id.getNamespace(), id.getPath().substring(ID.getPath().length() + 1, id.getPath().length() - 5));
+            Identifier identifier = Identifier.of(id.getNamespace(), id.getPath().substring(ID.getPath().length() + 1, id.getPath().length() - 5));
             JsonElement jsonElement = prepared.get(identifier);
             if (jsonElement != null) {
-                VillagerTrades trades = VillagerTrades.CODEC.decode(JsonOps.INSTANCE, jsonElement).getOrThrow(false, s -> {
-                }/* DynamicVillagerTradesMod.LOGGER.error("Failed to read file {}: {}", identifier.toString(), s) */).getFirst();
-                builderMap.computeIfAbsent(trades.profession, p -> generateTradeGroups(Registries.VILLAGER_PROFESSION.get(p)).orElse(new TreeMap<>()));
-                if (trades.replace) {
-                    builderMap.put(trades.profession, new TreeMap<>());
-                }
-
-                Map<String, TradeGroup> groups = builderMap.get(trades.profession);
-                trades.offers().forEach((name, group) -> {
-                    groups.computeIfPresent(name, (_name, oldGroup) -> TradeGroup.merge(oldGroup, group));
-                    groups.putIfAbsent(name, group);
-                });
-                loadedCount.incrementAndGet();
+                VillagerTrades trades = VillagerTrades.CODEC.decode(JsonOps.INSTANCE, jsonElement).getOrThrow().getFirst();
+                builderMap.computeIfAbsent(trades.profession, k -> new LinkedList<>()).add(trades);
             }
         });
 
-        this.tradeGroups = builderMap;
+        this.loadedTrades = builderMap;
         Generator.resetAll();
     }
 
-    public Optional<Map<String, TradeGroup>> getVillagerOffers(VillagerProfession profession) {
-        return Optional.ofNullable(tradeGroups.get(Registries.VILLAGER_PROFESSION.getId(profession))).or(() -> generateTradeGroups(profession));
+    public Optional<Map<String, TradeGroup>> getVillagerOffers(VillagerProfession profession, DynamicRegistryManager registryManager) {
+        return Optional.ofNullable(tradeGroups.get(Registries.VILLAGER_PROFESSION.getId(profession))).or(() -> generateTradeGroups(profession, registryManager));
     }
 
-    private Optional<Map<String, TradeGroup>> generateTradeGroups(VillagerProfession profession) {
-        return Generator.generateAll(profession);
+    private Optional<Map<String, TradeGroup>> generateTradeGroups(VillagerProfession profession, DynamicRegistryManager registryManager) {
+        Objects.requireNonNull(registryManager);
+        Identifier professionId = Registries.VILLAGER_PROFESSION.getId(profession);
+        Map<String, TradeGroup> generated = Generator.generateAll(profession, registryManager).orElse(new TreeMap<>());
+        for (VillagerTrades trades : loadedTrades.getOrDefault(professionId, Collections.emptyList())) {
+            if (trades.replace) {
+                generated = new TreeMap<>();
+            }
+            for (Map.Entry<String, TradeGroup> entry : trades.offers().entrySet()) {
+                generated.computeIfPresent(entry.getKey(), (_name, oldGroup) -> TradeGroup.merge(oldGroup, entry.getValue()));
+                generated.putIfAbsent(entry.getKey(), entry.getValue());
+            }
+        }
+        tradeGroups.put(professionId, generated);
+        return Optional.of(generated);
     }
 
     public enum MerchantLevel implements StringIdentifiable {

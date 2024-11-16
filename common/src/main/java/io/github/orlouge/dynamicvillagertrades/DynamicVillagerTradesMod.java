@@ -7,6 +7,7 @@ import com.mojang.serialization.JsonOps;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeGroup;
 import io.github.orlouge.dynamicvillagertrades.trade_offers.TradeOfferFactoryType;
 import net.minecraft.SharedConstants;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
@@ -62,13 +63,14 @@ public class DynamicVillagerTradesMod {
 
 
     public static Identifier id(String string) {
-        return new Identifier(MOD_ID, string);
+        return Identifier.of(MOD_ID, string);
     }
 
     public static void registerCommands(CommandDispatcher<ServerCommandSource> dispatcher) {
         LiteralArgumentBuilder<ServerCommandSource> baseCommand = CommandManager.literal(MOD_ID).requires(source -> source.hasPermissionLevel(2));
         baseCommand.then(CommandManager.literal("export").executes(context -> {
             exportDatapack(
+                    context.getSource().getRegistryManager(),
                     err -> context.getSource().sendFeedback(() -> Text.literal(err.getMessage()), false),
                     path -> context.getSource().sendFeedback(() -> Text.literal("Exported to " + path), false)
             );
@@ -77,7 +79,7 @@ public class DynamicVillagerTradesMod {
         dispatcher.register(baseCommand);
     }
 
-    public static void exportDatapack(Consumer<Exception> onException, Consumer<String> onExport) {
+    public static void exportDatapack(DynamicRegistryManager registryManager, Consumer<Exception> onException, Consumer<String> onExport) {
         File zipFile = new File("dvt_generated_pack.zip");
         boolean exported = false;
         List<Exception> exceptions = new LinkedList<>();
@@ -91,11 +93,11 @@ public class DynamicVillagerTradesMod {
             Registries.VILLAGER_PROFESSION.getEntrySet().forEach(professionEntry -> {
                 Identifier professionId = professionEntry.getKey().getValue();
                 VillagerProfession profession = professionEntry.getValue();
-                Optional<Map<String, TradeGroup>> tradeGroups = TRADE_OFFER_MANAGER.getVillagerOffers(profession);
+                Optional<Map<String, TradeGroup>> tradeGroups = TRADE_OFFER_MANAGER.getVillagerOffers(profession, registryManager);
                 if (tradeGroups.isPresent()) {
                     try {
                         TradeOfferManager.VillagerTrades trades = new TradeOfferManager.VillagerTrades(professionId, true, tradeGroups.get());
-                        byte[] json = TradeOfferManager.GSON.toJson(TradeOfferManager.VillagerTrades.CODEC.encodeStart(JsonOps.INSTANCE, trades).getOrThrow(false, s -> {throw new RuntimeException(s);})).getBytes();
+                        byte[] json = TradeOfferManager.GSON.toJson(TradeOfferManager.VillagerTrades.CODEC.encodeStart(JsonOps.INSTANCE, trades).getOrThrow()).getBytes();
                         zip.putNextEntry(new ZipEntry("data/" + MOD_ID + "/" + TradeOfferManager.ID.getPath() + "/" + professionId.getPath() + ".json"));
                         zip.write(json, 0, json.length);
                         zip.closeEntry();

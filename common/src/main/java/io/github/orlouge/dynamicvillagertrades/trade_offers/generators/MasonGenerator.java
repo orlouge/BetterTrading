@@ -1,6 +1,6 @@
 package io.github.orlouge.dynamicvillagertrades.trade_offers.generators;
 
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.village.TradeOffers;
@@ -22,7 +22,7 @@ public class MasonGenerator extends OneByOneVanillaLikeGenerator {
         Map<String, Double> attributes = new HashMap<>();
 
         item.flatMap(AttributeUtils::getBlockInstrument)
-                .flatMap(m -> m == Instrument.BASEDRUM ? item.flatMap(AttributeUtils::getColorAttributes) : Optional.empty())
+                .flatMap(m -> m == NoteBlockInstrument.BASEDRUM ? item.flatMap(AttributeUtils::getColorAttributes) : Optional.empty())
                 .map(colors -> {attributes.put("stone", 1.0); attributes.putAll(colors); return true;})
                 .map(x -> item.map(MasonGenerator::stoneModifier).map(s -> {attributes.put("raw", s.equals("raw") ? 1.0 : -1.0); return true;}).isPresent())
                 .or(() -> {attributes.put("stone", -1.0); return Optional.of(true);});

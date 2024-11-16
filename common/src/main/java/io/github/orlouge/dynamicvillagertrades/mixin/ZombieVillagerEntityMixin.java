@@ -15,7 +15,6 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Mixin(ZombieVillagerEntity.class)
 public class ZombieVillagerEntityMixin implements ExtendedVillagerEntity {
-    @Shadow private NbtCompound offerData;
     private static final String extra_data_key = DynamicVillagerTradesMod.MOD_ID + "_data";
     private NbtCompound extraData = null;
 

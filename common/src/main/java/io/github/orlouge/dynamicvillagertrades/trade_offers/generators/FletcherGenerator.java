@@ -10,6 +10,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.ArrowItem;
 import net.minecraft.potion.Potion;
 import net.minecraft.recipe.BrewingRecipeRegistry;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.village.TradeOffers;
@@ -30,7 +31,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
     }
 
     @Override
-    protected TradeGroup tradeGroupAtLevel(Integer level, String levelName, TradeOffers.Factory[] trades) {
+    protected TradeGroup tradeGroupAtLevel(Integer level, String levelName, TradeOffers.Factory[] trades, DynamicRegistryManager registryManager) {
         if (potionAttributesGenerator == null) potionAttributesGenerator = new PotionAttributesGenerator();
         List<ExtendedTradeOffer.Factory> offers = new ArrayList<>();
         Map<String, TradeGroup> subgroups = new HashMap<>();
@@ -98,7 +99,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
             Map<Potion, Map<String, Double>> attributes = new HashMap<>();
             Map<Potion, Map<String, Integer>> candidateSecondaryAttributes = new HashMap<>();
             Registries.POTION.forEach(potion -> {
-                if (potion.getEffects().isEmpty() || !BrewingRecipeRegistry.isBrewable(potion)) return;
+                if (potion.getEffects().isEmpty()/* || !BrewingRecipeRegistry.isBrewable(potion)*/) return;
                 Map<String, Double> potionAttributes = new HashMap<>(getPrimaryAttributes(potion));
                 attributes.put(potion, potionAttributes);
                 candidateSecondaryAttributes.put(potion, getSecondaryAttributes(potion));
@@ -126,7 +127,7 @@ public class FletcherGenerator extends VanillaLikeGenerator
             Map<String, Integer> attributes = new HashMap<>();
             Identifier id = Registries.POTION.getId(potion);
             for (StatusEffectInstance effect : potion.getEffects()) {
-                for (String attribute : getStatusEffectAttributes(effect.getEffectType())) {
+                for (String attribute : getStatusEffectAttributes(effect.getEffectType().value())) {
                     attributes.put(attribute, 10);
                 }
             }
